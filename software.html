@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ASLab &mdash; Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main_style.css">
+</head>
+<body>
+
+ <header>
+  <nav class="navbar">
+  <div class="nav-container">
+    <h1 class="logo">ASLab</h1>
+
+    <!-- Hamburger button (visible on mobile only) -->
+    <div class="hamburger">
+      &#9776; <!-- Unicode hamburger icon -->
+    </div>
+
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="collaborators.html">Collaborators</a></li>
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Resources</a>
+        <ul class="dropdown-menu">
+          <li><a href="databases.html">Databases & Webservers</a></li>
+          <li><a href="infrastructure.html">Computational Infrastructure</a></li>
+          <li><a href="software.html">Software</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">More</a>
+        <ul class="dropdown-menu">
+          <li><a href="organisation.html">Organisation</a></li>
+          <li><a href="funding.html">Funding</a></li>
+          <li><a href="opportunities.html">Opportunities</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+</header>
+
+
+<section class="people-header">
+        <div class="container">
+            <h1 class="people-title">Software</h1>
+        </div>
+</section>
+
+<body>
+<div id="repo-container" style="margin: 50px;"></div>
+</body>
+<!-- 3. Initialization Logic -->
+ <script src="js/repoWidget.js">
+
+ </script>
+ <script>
+createRepoWidget({
+    "username": "asamallab",
+    "containerId": "repo-container",
+    "columns": {
+        "mobile": 1,
+        "tablet": 2,
+        "desktop": 3
+    },
+    "maxRepos":30,
+    "sortBy": "stars",
+    "scaleOnHover": 1.05,
+    "cardStyles": {
+        "backgroundColor": "#ffffff"
+    },
+    "textStyles": {
+        "titleColor": "#333333",
+        "descriptionColor": "#666666",
+        "iconColor": "#888888"
+    }
+});
+</script>
+      <footer class="footer">
+        <div class="container">
+           <p>The Institute of Mathematical Sciences, Chennai 600113, India</p>
+            <p>Copyright © 2025 ASLab - All rights reserved</p>
+        </div>
+     </footer>
+          <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  // Toggle mobile menu
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  // Toggle mobile dropdowns
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  dropdowns.forEach(drop => {
+    const toggle = drop.querySelector('.dropdown-toggle');
+
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();             // prevent default link
+      drop.classList.toggle('active'); // show/hide submenu
+    });
+  });
+});
+
+</script>
+</html>

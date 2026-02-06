@@ -1,0 +1,45 @@
+<style>
+    body {
+      
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+
+    .containerfacilities {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap; /* Makes it responsive on small screens */
+    }
+
+    .image-box {
+      flex: 1 1 300px;
+    }
+
+    .image-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-box {
+      flex: 1 1 300px;
+    }
+
+    .text-box h2 {
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    .text-box ul {
+      padding-left: 20px;
+      color: #555;
+    }
+
+    .text-box ul li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+  </style>

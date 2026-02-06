@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ASLAB &mdash; Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=B612+Mono|Cabin:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main_style.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">ASLab</h1>
+
+        <!-- Hamburger button (visible on mobile only) -->
+        <div class="hamburger">
+          &#9776; <!-- Unicode hamburger icon -->
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="collaborators.html">Collaborators</a></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Resources</a>
+            <ul class="dropdown-menu">
+              <li><a href="databases.html">Databases & Webservers</a></li>
+              <li><a href="infrastructure.html">Computational Infrastructure</a></li>
+              <li><a href="software.html">Software</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">More</a>
+            <ul class="dropdown-menu">
+              <li><a href="organisation.html">Organisation</a></li>
+              <li><a href="funding.html">Funding</a></li>
+              <li><a href="opportunities.html">Opportunities</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="people-header">
+    <div class="container">
+      <h1 class="people-title">Contact</h1>
+    </div>
+    <section class="contact-wrapper">
+
+      <!-- CONTACT INFO -->
+      <div class="card contact-card">
+        <h2>Contact Information</h2>
+        <p class="subtitle">
+          <a href="https://www.imsc.res.in">The Institute of Mathematical Sciences (IMSc)</a>
+        </p>
+
+        <div class="info-box">
+
+          <div>
+            <strong>Address</strong>
+            <p>
+	    <a href="https://www.imsc.res.in">The Institute of Mathematical Sciences (IMSc),</a> <br>
+	    4th Cross Road, CIT Campus,<br>
+              Taramani, Chennai 600113<br>
+              India</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+
+          <div>
+            <strong>Email</strong>
+            <p>
+              asamal@imsc.res.in
+            </p>
+          </div>
+        </div>
+
+        <div class="info-box">
+
+          <div>
+            <strong>Phone</strong>
+            <p>+91-44-22543219 (O)</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+
+          <div>
+            <strong>Fax</strong>
+            <p>+91-44-22541586</p>
+          </div>
+        </div>
+
+        <div class="office-box">
+          <strong>Office</strong>
+          <p>Room 219, New Building</p>
+        </div>
+      </div>
+
+      <!-- DIRECTIONS -->
+      <div class="card map-card">
+        <h2>Directions</h2>
+
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps?q=IMSc%20Taramani&output=embed" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+
+        <a href="https://www.google.com/maps/dir//The+Institute+of+Mathematical+Sciences+X6VW%2BFP7+4th+Cross+St,+CIT+Campus,+Tharamani+Chennai,+Tamil+Nadu+600113/@12.9942358,80.2470426,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3a5267891168f22b:0xe363efe1ea3c2826"
+          target="_blank" class="direction-btn">
+          Get Directions →
+        </a>
+
+        <p class="small-text">
+          Additional directions are available <a href="https://www.imsc.res.in/getting_here">here</a>.
+        </p>
+      </div>
+
+
+
+    </section>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <footer class="footer">
+        <div class="container">
+          <p>The Institute of Mathematical Sciences, Chennai 600113, India</p>
+          <p>Copyright © 2025 ASLab - All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+
+      // Toggle mobile menu
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+
+      // Toggle mobile dropdowns
+      const dropdowns = document.querySelectorAll('.dropdown');
+
+      dropdowns.forEach(drop => {
+        const toggle = drop.querySelector('.dropdown-toggle');
+
+        toggle.addEventListener('click', (e) => {
+          e.preventDefault();             // prevent default link
+          drop.classList.toggle('active'); // show/hide submenu
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>
