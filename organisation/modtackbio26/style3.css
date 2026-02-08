@@ -604,3 +604,14 @@ a.prev-edition-link:hover {
         width: 100% !important;
     }
 } */
+
+.alert-participants {
+  background-color: #cfa708;   /* soft yellow */
+  color: #000;
+  border-color: #cfa708;
+}
+.alert-participants a {
+  color: #000;
+  font-weight: 600;
+}
+
