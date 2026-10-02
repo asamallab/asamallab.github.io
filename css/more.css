@@ -1,0 +1,370 @@
+/* ASLab — More pages (Organisation, Funding, Opportunities).
+   Ported from More_Final.html. Header, footer, fonts and colours come from the shared
+   stylesheets; everything here is scoped to .more-page so it cannot leak into other pages. */
+.more-page {
+  --shadow-sm: 0 8px 24px rgba(24, 61, 55, 0.06);
+  --shadow-md: 0 16px 40px rgba(24, 61, 55, 0.10);
+  --radius-lg: 22px;
+  --radius-md: 16px;
+}
+
+.more-page .content-intro {
+      margin: 0 0 26px;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 920px;
+}
+
+.more-page .workshop-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+}
+
+.more-page .workshop-panel {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      scroll-margin-top: 100px;
+}
+
+.more-page .workshop-panel:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: #CFDDD6;
+}
+
+.more-page .workshop-panel > a.visit-link,
+.more-page .workshop-panel > .panel-body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+}
+
+.more-page .panel-body,
+.more-page .workshop-panel > a.visit-link {
+      padding: 20px;
+}
+
+.more-page .workshop-panel h2 {
+      margin: 0 0 16px;
+      font-size: 1.5rem;
+      line-height: 1.25;
+      font-weight: 700;
+      color: var(--dark-green);
+      text-wrap: balance;
+}
+
+.more-page .poster-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 280px;
+      padding: 12px;
+      background: var(--soft-green);
+      border: 1px solid var(--border-light);
+      border-radius: 14px;
+      overflow: hidden;
+}
+
+.more-page .poster-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 9px;
+}
+
+.more-page .date {
+      margin: 14px 0 0;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.55;
+}
+
+.more-page .visit-link {
+      color: inherit;
+}
+
+.more-page .visit-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: auto;
+      padding-top: 16px;
+      color: var(--primary-green);
+      font-size: 0.95rem;
+      font-weight: 700;
+}
+
+.more-page .visit-arrow {
+      display: inline-block;
+      transition: transform 0.2s ease;
+}
+
+.more-page .workshop-panel:hover .visit-arrow { transform: translateX(4px);
+}
+
+.more-page .funding-stack {
+      display: grid;
+      gap: 50px;
+}
+
+.more-page .funding-group {
+      scroll-margin-top: 100px;
+}
+
+.more-page .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin: 0 0 18px;
+      padding: 0 0 11px;
+      border-bottom: 1px solid var(--border);
+      color: var(--dark-green);
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+}
+
+.more-page .section-title::after {
+      content: "";
+      width: 50px;
+      height: 3px;
+      flex: 0 0 auto;
+      border-radius: 99px;
+      background: var(--accent-green);
+}
+
+.more-page .project-list {
+      display: grid;
+      gap: 14px;
+}
+
+.more-page .project-card {
+      display: grid;
+      grid-template-columns: 190px minmax(0, 1fr);
+      gap: 22px;
+      align-items: center;
+      padding: 20px 22px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent-green);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.more-page .project-card.completed {
+      border-left-color: #8AA69A;
+}
+
+.more-page .project-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: #D0DDD6;
+}
+
+.more-page .project-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 72px;
+      padding: 10px;
+      background: var(--soft-green);
+      border: 1px solid var(--border-light);
+      border-radius: 14px;
+}
+
+.more-page .project-left a { display: inline-flex; align-items: center; justify-content: center;
+}
+
+.more-page .project-left img {
+      display: block;
+      width: 70px;
+      height: auto;
+      max-height: 66px;
+      object-fit: contain;
+      transition: transform 0.22s ease;
+}
+
+.more-page .project-card:hover .project-left img { transform: scale(1.04);
+}
+
+.more-page .project-right { min-width: 0;
+}
+
+.more-page .status-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--dark-green);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.05em;
+}
+
+.more-page .completed-badge {
+      background: var(--primary-green);
+}
+
+.more-page .project-right h3 {
+      margin: 8px 0 3px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.35;
+      color: var(--text);
+}
+
+.more-page .duration {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+}
+
+.more-page .opportunities-list {
+      display: grid;
+      gap: 14px;
+}
+
+.more-page .info-panel {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.22s ease, border-color 0.22s ease;
+      scroll-margin-top: 100px;
+}
+
+.more-page .info-panel:hover,
+.more-page .info-panel[open] {
+      border-color: #CFDDD6;
+      box-shadow: var(--shadow-md);
+}
+
+.more-page .info-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 24px;
+      cursor: pointer;
+      list-style: none;
+}
+
+.more-page .info-summary::-webkit-details-marker { display: none;
+}
+
+.more-page .info-summary::after {
+      content: "+";
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      flex: 0 0 auto;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      color: var(--primary-green);
+      background: var(--soft-green);
+      font-size: 1.3rem;
+      line-height: 1;
+      transition: transform 0.22s ease, background 0.22s ease, color 0.22s ease;
+}
+
+.more-page .info-panel[open] .info-summary::after {
+      content: "−";
+      transform: rotate(180deg);
+      background: var(--dark-green);
+      border-color: var(--dark-green);
+      color: var(--white);
+}
+
+.more-page .info-summary h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--dark-green);
+      line-height: 1.35;
+}
+
+.more-page .info-body {
+      padding: 0 24px 24px;
+      color: var(--text-secondary);
+}
+
+.more-page .info-body p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.7;
+}
+
+.more-page .info-body a {
+      color: var(--primary-green);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+}
+
+.more-page .highlight-box {
+      margin-top: 16px;
+      padding: 13px 15px;
+      background: var(--pale-mint);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent-green);
+      border-radius: 11px;
+      color: var(--text);
+      font-size: 0.9rem;
+      line-height: 1.55;
+}
+
+@media (max-width: 1100px) {
+  .more-page .workshop-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .more-page .poster-wrap { min-height: 0; }
+  .more-page .workshop-panel h2 { font-size: 1.35rem; }
+  .more-page .info-summary h3 { font-size: 1.12rem; }
+}
+@media (max-width: 680px) {
+  .more-page .workshop-grid { grid-template-columns: 1fr; }
+  .more-page .project-card { grid-template-columns: 1fr; }
+  .more-page .section-title { font-size: 1.45rem; }
+}
+
+/* neutralise the old blue side-bar that main_style.css puts on every .section-title */
+.more-page .section-title { border-left: 0; padding-left: 0; }
+
+/* page frame and type exactly as in More_Final.html (font family stays the site font) */
+main.more-page { max-width: 1200px; margin: 0 auto; padding: 48px 32px 64px; font-size: 16px; font-weight: 400; line-height: 1.55; }
+.more-page p, .more-page .poster-wrap { font-weight: 400; }
+.more-page .workshop-panel h2 { font-size: 1.5rem; font-weight: 700; line-height: 1.25; }
+.more-page .date { font-size: .95rem; line-height: 1.55; }
+.more-page .visit-row { font-size: .95rem; font-weight: 700; line-height: 1.55; }
+@media (max-width: 768px) { main.more-page { padding: 32px 16px 48px; } }
+/* undo old main_style.css rules that reuse these class names */
+.more-page .workshop-grid { padding: 0; margin: 0; }
+.more-page .workshop-panel { padding: 0; }
+.more-page .workshop-panel > a.visit-link { margin: 0; font-weight: 400; }
+.more-page .visit-row { margin-top: 0; }
+.more-page .info-panel { padding: 0; margin: 0; }
+.more-page .project-card { margin: 0; }
+
+/* Organisation: whole card in the light green that framed the posters */
+.more-page .workshop-panel { background: var(--soft-green); }
+.more-page .poster-wrap { background: transparent; border: 0; padding: 0; min-height: 0; }
+/* Funding: no green bar at the right of the section titles */
+.more-page .section-title::after { display: none; }

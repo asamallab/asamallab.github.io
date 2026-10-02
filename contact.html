@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>ASLAB &mdash; Contact</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=B612+Mono|Cabin:400,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASLab &mdash; Contact</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612+Mono|Cabin:400,700&display=swap">
   <link rel="stylesheet" href="css/main_style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/homepage-v2.css">
+  <link rel="stylesheet" href="css/aslab-pages.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
-
 <body>
   <header>
     <nav class="navbar">
       <div class="nav-container">
         <h1 class="logo">ASLab</h1>
-
         <!-- Hamburger button (visible on mobile only) -->
-        <div class="hamburger">
-          &#9776; <!-- Unicode hamburger icon -->
-        </div>
-
+        <div class="hamburger" aria-label="Menu">&#9776;</div>
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="people.html">People</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="collaborators.html">Collaborators</a></li>
-
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">Resources</a>
             <ul class="dropdown-menu">
-              <li><a href="databases.html">Databases & Webservers</a></li>
+              <li><a href="databases.html">Databases &amp; Webservers</a></li>
               <li><a href="infrastructure.html">Computational Infrastructure</a></li>
               <li><a href="software.html">Software</a></li>
             </ul>
           </li>
-
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">More</a>
             <ul class="dropdown-menu">
@@ -45,129 +40,136 @@
               <li><a href="opportunities.html">Opportunities</a></li>
             </ul>
           </li>
-
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <section class="people-header">
-    <div class="container">
-      <h1 class="people-title">Contact</h1>
+  <section class="page-header">
+    <div class="page-width">
+      <h1>Contact</h1>
     </div>
-    <section class="contact-wrapper">
-
-      <!-- CONTACT INFO -->
-      <div class="card contact-card">
-        <h2>Contact Information</h2>
-        <p class="subtitle">
-          <a href="https://www.imsc.res.in">The Institute of Mathematical Sciences (IMSc)</a>
-        </p>
-
-        <div class="info-box">
-
-          <div>
-            <strong>Address</strong>
-            <p>
-	    <a href="https://www.imsc.res.in">The Institute of Mathematical Sciences (IMSc),</a> <br>
-	    4th Cross Road, CIT Campus,<br>
-              Taramani, Chennai 600113<br>
-              India</p>
-          </div>
-        </div>
-
-        <div class="info-box">
-
-          <div>
-            <strong>Email</strong>
-            <p>
-              asamal@imsc.res.in
-            </p>
-          </div>
-        </div>
-
-        <div class="info-box">
-
-          <div>
-            <strong>Phone</strong>
-            <p>+91-44-22543219 (O)</p>
-          </div>
-        </div>
-
-        <div class="info-box">
-
-          <div>
-            <strong>Fax</strong>
-            <p>+91-44-22541586</p>
-          </div>
-        </div>
-
-        <div class="office-box">
-          <strong>Office</strong>
-          <p>Room 219, New Building</p>
-        </div>
-      </div>
-
-      <!-- DIRECTIONS -->
-      <div class="card map-card">
-        <h2>Directions</h2>
-
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps?q=IMSc%20Taramani&output=embed" allowfullscreen="" loading="lazy">
-          </iframe>
-        </div>
-
-        <a href="https://www.google.com/maps/dir//The+Institute+of+Mathematical+Sciences+X6VW%2BFP7+4th+Cross+St,+CIT+Campus,+Tharamani+Chennai,+Tamil+Nadu+600113/@12.9942358,80.2470426,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3a5267891168f22b:0xe363efe1ea3c2826"
-          target="_blank" class="direction-btn">
-          Get Directions →
-        </a>
-
-        <p class="small-text">
-          Additional directions are available <a href="https://www.imsc.res.in/getting_here">here</a>.
-        </p>
-      </div>
-
-
-
-    </section>
   </section>
+
+  <main class="page contact-page">
+      
+
+      <section class="contact-section" aria-labelledby="contact-information">
+        <div class="contact-layout">
+
+          <article class="contact-card">
+            <div class="section-heading">
+              <h2 id="contact-information">Contact Information</h2>
+            </div>
+
+            <a class="institution-link" href="https://www.imsc.res.in/" target="_blank" rel="noopener noreferrer">
+              The Institute of Mathematical Sciences (IMSc)
+            </a>
+
+            <div class="detail-list">
+              <div class="detail">
+                <div class="detail-icon" aria-hidden="true">⌖</div>
+                <div>
+                  <span class="detail-label">Address</span>
+                  <div class="detail-value">
+                    <a href="https://www.imsc.res.in/" target="_blank" rel="noopener noreferrer">
+                      The Institute of Mathematical Sciences (IMSc),
+                    </a><br>
+                    4th Cross Road, CIT Campus,<br>
+                    Taramani, Chennai 600113<br>
+                    India
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail">
+                <div class="detail-icon" aria-hidden="true">@</div>
+                <div>
+                  <span class="detail-label">Email</span>
+                  <div class="detail-value">
+                    <a href="mailto:asamal@imsc.res.in">asamal@imsc.res.in</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail">
+                <div class="detail-icon" aria-hidden="true">☎</div>
+                <div>
+                  <span class="detail-label">Phone</span>
+                  <div class="detail-value">
+                    <a href="tel:+914422543219">+91-44-22543219 (O)</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail">
+                <div class="detail-icon" aria-hidden="true">▤</div>
+                <div>
+                  <span class="detail-label">Fax</span>
+                  <div class="detail-value">
+                    +91-44-22541586
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail">
+                <div class="detail-icon" aria-hidden="true">⌂</div>
+                <div>
+                  <span class="detail-label">Office</span>
+                  <div class="detail-value">
+                    Room 219, New Building
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-actions">
+              <button class="action" type="button" data-copy="asamal@imsc.res.in">Copy email</button>
+              <button class="action" type="button" data-copy="+91-44-22543219 (O)">Copy phone</button>
+            </div>
+          </article>
+
+          <article class="map-card" aria-label="Directions">
+            <iframe
+              class="map-frame"
+              title="The Institute of Mathematical Sciences, Taramani, Chennai"
+              src="https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sIMSc+Taramani"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+
+            <div class="map-overlay">
+              <span class="map-label">Directions</span>
+              <a
+                class="directions"
+                href="https://www.google.com/maps/dir//The%20Institute%20of%20Mathematical%20Sciences%20X6VW%20FP7%204th%20Cross%20St,%20CIT%20Campus,%20Tharamani%20Chennai,%20Tamil%20Nadu%20600113/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Get Directions <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <p class="additional-directions">
+        Additional directions are available
+        <a href="https://www.imsc.res.in/" target="_blank" rel="noopener noreferrer">here</a>.
+      </p>
+    
+  </main>
 
   <footer class="footer">
     <div class="container">
-      <footer class="footer">
-        <div class="container">
-          <p>The Institute of Mathematical Sciences, Chennai 600113, India</p>
-          <p>Copyright © 2026 ASLab - All rights reserved</p>
-        </div>
-      </footer>
+      <p>The Institute of Mathematical Sciences, Chennai 600113, India</p>
+      <p>Copyright © 2026 ASLab - All rights reserved</p>
     </div>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const hamburger = document.querySelector('.hamburger');
-      const navMenu = document.querySelector('.nav-menu');
-
-      // Toggle mobile menu
-      hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-      });
-
-      // Toggle mobile dropdowns
-      const dropdowns = document.querySelectorAll('.dropdown');
-
-      dropdowns.forEach(drop => {
-        const toggle = drop.querySelector('.dropdown-toggle');
-
-        toggle.addEventListener('click', (e) => {
-          e.preventDefault();             // prevent default link
-          drop.classList.toggle('active'); // show/hide submenu
-        });
-      });
-    });
-
-  </script>
+  <div class="copy-toast" id="copy-toast" role="status" aria-live="polite">Copied</div>
+  <script src="js/site.js"></script>
+  <script src="js/contact.js"></script>
 </body>
-
 </html>

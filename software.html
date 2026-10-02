@@ -2,118 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ASLab &mdash; Software</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>ASLab &mdash; Software</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612+Mono|Cabin:400,700&display=swap">
   <link rel="stylesheet" href="css/main_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/homepage-v2.css">
+  <link rel="stylesheet" href="css/aslab-pages.css">
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">ASLab</h1>
+        <!-- Hamburger button (visible on mobile only) -->
+        <div class="hamburger" aria-label="Menu">&#9776;</div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="collaborators.html">Collaborators</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Resources</a>
+            <ul class="dropdown-menu">
+              <li><a href="databases.html">Databases &amp; Webservers</a></li>
+              <li><a href="infrastructure.html">Computational Infrastructure</a></li>
+              <li><a href="software.html">Software</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">More</a>
+            <ul class="dropdown-menu">
+              <li><a href="organisation.html">Organisation</a></li>
+              <li><a href="funding.html">Funding</a></li>
+              <li><a href="opportunities.html">Opportunities</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
- <header>
-  <nav class="navbar">
-  <div class="nav-container">
-    <h1 class="logo">ASLab</h1>
-
-    <!-- Hamburger button (visible on mobile only) -->
-    <div class="hamburger">
-      &#9776; <!-- Unicode hamburger icon -->
+  <section class="page-header">
+    <div class="page-width">
+      <h1>Software</h1>
     </div>
+  </section>
 
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="people.html">People</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="collaborators.html">Collaborators</a></li>
+  <main class="page software-page">
+  <section class="toolbar" aria-label="Software search and filters">
+    <label class="search"><span aria-hidden="true">⌕</span><input id="repoSearch" type="search" placeholder="Search repository or description…" autocomplete="off"></label>
+    <div class="filter-row" role="group" aria-label="Software language filters">
+      <button type="button" class="filter-button active repo-filter" data-language="all">All</button>
+      <button type="button" class="filter-button repo-filter" data-language="Python">Python</button>
+      <button type="button" class="filter-button repo-filter" data-language="Jupyter Notebook">Jupyter Notebook</button>
+      <button type="button" class="filter-button repo-filter" data-language="HTML">HTML</button>
+      <button type="button" class="filter-button repo-filter" data-language="C++">C++</button>
+      <button type="button" class="filter-button repo-filter" data-language="Other">Other</button>
+    </div>
+  </section>
+  <div class="repo-status" id="repoStatus" aria-live="polite"></div>
+  <div class="results-top"><div>Software</div><div id="repoLabel">All repositories</div></div>
+  <section class="card-grid" id="repoGrid"></section>
+  <div class="empty" id="repoEmpty" hidden><strong>No repositories found.</strong><p>Try another search term or language filter.</p></div>
+  </main>
 
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle">Resources</a>
-        <ul class="dropdown-menu">
-          <li><a href="databases.html">Databases & Webservers</a></li>
-          <li><a href="infrastructure.html">Computational Infrastructure</a></li>
-          <li><a href="software.html">Software</a></li>
-        </ul>
-      </li>
-
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle">More</a>
-        <ul class="dropdown-menu">
-          <li><a href="organisation.html">Organisation</a></li>
-          <li><a href="funding.html">Funding</a></li>
-          <li><a href="opportunities.html">Opportunities</a></li>
-        </ul>
-      </li>
-
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-</header>
-
-
-<section class="people-header">
-        <div class="container">
-            <h1 class="people-title">Software</h1>
-        </div>
-</section>
-
-<body>
-<div id="repo-container" style="margin: 50px;"></div>
+  <footer class="footer">
+    <div class="container">
+      <p>The Institute of Mathematical Sciences, Chennai 600113, India</p>
+      <p>Copyright © 2026 ASLab - All rights reserved</p>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+  <script src="js/software.js"></script>
 </body>
-<!-- 3. Initialization Logic -->
- <script src="js/repoWidget.js">
-
- </script>
- <script>
-createRepoWidget({
-    "username": "asamallab",
-    "containerId": "repo-container",
-    "columns": {
-        "mobile": 1,
-        "tablet": 2,
-        "desktop": 3
-    },
-    "maxRepos":30,
-    "sortBy": "stars",
-    "scaleOnHover": 1.05,
-    "cardStyles": {
-        "backgroundColor": "#ffffff"
-    },
-    "textStyles": {
-        "titleColor": "#333333",
-        "descriptionColor": "#666666",
-        "iconColor": "#888888"
-    }
-});
-</script>
-      <footer class="footer">
-        <div class="container">
-           <p>The Institute of Mathematical Sciences, Chennai 600113, India</p>
-            <p>Copyright © 2026 ASLab - All rights reserved</p>
-        </div>
-     </footer>
-          <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.querySelector('.nav-menu');
-
-  // Toggle mobile menu
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-
-  // Toggle mobile dropdowns
-  const dropdowns = document.querySelectorAll('.dropdown');
-
-  dropdowns.forEach(drop => {
-    const toggle = drop.querySelector('.dropdown-toggle');
-
-    toggle.addEventListener('click', (e) => {
-      e.preventDefault();             // prevent default link
-      drop.classList.toggle('active'); // show/hide submenu
-    });
-  });
-});
-
-</script>
 </html>

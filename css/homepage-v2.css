@@ -1,0 +1,878 @@
+/* =========================================================================
+   ASLab Homepage v2  —  hero · research landscape · trajectory · news
+   -------------------------------------------------------------------------
+   Load AFTER main_style.css:
+     <link rel="stylesheet" href="css/main_style.css">
+     <link rel="stylesheet" href="css/homepage-v2.css">
+
+   • Fonts are inherited from the site (no font-family is set here).
+   • Colours use the "ASLab Modern Palette" (deep forest green + sage +
+     soft mint + warm off-white) supplied for this redesign.
+   • Navbar and footer markup are not touched; only their accent colours
+     inherit from this palette automatically via the site's own CSS vars.
+   • Every class here is prefixed "hx-" so nothing else on the site is
+     affected, except the small, explicitly-scoped overrides for
+     .bio-section / .news-section background and .card-badge colour,
+     and the .news-container layout (still carousel-free, grid based).
+   ========================================================================= */
+
+:root {
+  /* ASLab Modern Palette */
+  --dark-green: #183D37;
+  --primary-green: #477866;
+  --accent-green: #5B8C78;
+  --light-green: #6DA38C;
+
+  --mint: #D8EEE6;
+  --pale-mint: #DFF2EC;
+  --soft-green: #EEF5F1;
+  --tag-green: #E9F3EE;
+  --status-green: #54A77F;
+  --loc-border: #D8E4DE;
+
+  --page-bg: #F6F7F4;
+  --hero-bg: #F8FAF7;
+  --hero-bg-2: #EDF3EF;
+  --section-bg: #EEF3F0;
+
+  --white: #FFFFFF;
+
+  --text: #17231F;
+  --text-secondary: #596762;
+  --card-text: #68756F;
+  --text-muted: #7B8782;
+  --footer-text: #718079;
+
+  --border: #DFE7E2;
+  --border-light: #E0E8E3;
+  --border-lighter: #E4E9E5;
+
+  --overlay-dark: #0C1714DD;
+
+  --hx-ease: cubic-bezier(.2, .8, .2, 1);
+}
+
+.hx-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* page canvas: swap the old mint/peach/lilac gradient for the new palette */
+.bio-section {
+  background: linear-gradient(180deg, var(--hero-bg) 0%, var(--hero-bg-2) 100%) !important;
+}
+
+/* ---------- scroll reveal (only hidden when JS is available) ---------- */
+.js .hx-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .8s var(--hx-ease), transform .8s var(--hx-ease);
+  transition-delay: var(--d, 0s);
+}
+
+.js .hx-reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- shared bits ---------- */
+.hx-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 18px;
+  font-size: .74rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--primary-green);
+}
+
+.hx-hero .hx-eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1.5px;
+  background: currentColor;
+}
+
+.hx-h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.hx-block {
+  margin-top: clamp(72px, 10vw, 120px);
+}
+
+.hx-sec-head {
+  margin-bottom: 30px;
+}
+
+.hx-sec-head .hx-eyebrow {
+  margin-bottom: 12px;
+}
+
+
+/* =========================================================================
+   1. HERO
+   ========================================================================= */
+.hx-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.hx-title {
+  margin: 0 0 22px;
+  font-size: clamp(1.9rem, 3.4vw, 2.7rem);
+  line-height: 1.22;
+  letter-spacing: -.01em;
+  font-weight: 800;
+  color: var(--accent-green);
+}
+
+.hx-lead {
+  max-width: 38rem;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+/* profile card */
+.hx-profile {
+  position: relative;
+  justify-self: end;
+  width: min(100%, 400px);
+}
+
+.hx-profile::before {
+  content: "";
+  position: absolute;
+  inset: 34px -32px -30px 32px;
+  border-radius: 34px;
+  background: var(--mint);
+  transform: rotate(4deg);
+  transition: transform .7s var(--hx-ease);
+}
+
+.hx-profile:hover::before {
+  transform: rotate(7deg) translate(6px, 4px);
+}
+
+.hx-card {
+  position: relative;
+  z-index: 1;
+  padding: 16px 16px 24px;
+  border-radius: 30px;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 30px 60px rgba(24, 61, 55, .14);
+  transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform .25s ease-out;
+}
+
+.hx-photo {
+  position: relative;
+  aspect-ratio: 1 / 1.08;
+  overflow: hidden;
+  border-radius: 22px;
+  background: var(--soft-green);
+}
+
+.hx-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform .9s var(--hx-ease);
+}
+
+.hx-card:hover .hx-photo img {
+  transform: scale(1.05);
+}
+
+.hx-card-body {
+  padding: 20px 10px 0;
+}
+
+.hx-role {
+  margin: 0 0 4px;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  color: var(--text-muted);
+}
+
+.hx-name {
+  margin: 0 0 12px;
+  font-size: 1.9rem;
+  line-height: 1.1;
+  letter-spacing: -.01em;
+  color: var(--text);
+}
+
+.hx-bio {
+  margin: 0 0 18px;
+  font-size: .9rem;
+  line-height: 1.65;
+  color: var(--card-text);
+}
+
+.hx-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hx-social a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text);
+  transition: transform .3s var(--hx-ease), background .3s, color .3s;
+}
+
+.hx-social a:hover {
+  transform: translateY(-4px);
+  background: var(--dark-green);
+  border-color: var(--dark-green);
+  color: var(--white);
+}
+
+.hx-loc {
+  position: absolute;
+  z-index: 2;
+  right: -18px;
+  bottom: -18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--white);
+  border: 1px solid var(--loc-border);
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--text);
+  box-shadow: 0 12px 28px rgba(24, 61, 55, .16);
+  animation: hx-float 5s ease-in-out infinite;
+}
+
+.hx-loc i {
+  color: var(--status-green);
+}
+
+@keyframes hx-float {
+  50% { transform: translateY(-6px); }
+}
+
+
+/* =========================================================================
+   2. RESEARCH LANDSCAPE — 2 equal columns, last card centred, all 5 the
+   same width, height, typography, number size, padding and weight.
+   ========================================================================= */
+.hx-areas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hx-areas li:nth-child(5) {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+.hx-areas li:nth-child(5) .hx-area {
+  width: 100%;
+  max-width: calc(50% - 9px);
+}
+
+.hx-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+  padding: 26px 28px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--white);
+  color: var(--text);
+  transition: transform .4s var(--hx-ease), box-shadow .4s var(--hx-ease), border-color .4s;
+}
+
+.hx-area::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--tag-green), transparent 70%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s var(--hx-ease);
+}
+
+.hx-area:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-green);
+  box-shadow: 0 24px 44px rgba(24, 61, 55, .12);
+}
+
+.hx-area:hover::before {
+  transform: scaleX(1);
+}
+
+.hx-num {
+  position: relative;
+  flex: none;
+  min-width: 2.2ch;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: var(--primary-green);
+}
+
+.hx-area-text {
+  position: relative;
+  flex: 1;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.hx-area-go {
+  position: relative;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--white);
+  transition: transform .4s var(--hx-ease), background .3s, color .3s, border-color .3s;
+}
+
+.hx-area:hover .hx-area-go {
+  transform: translateX(6px);
+  background: var(--dark-green);
+  border-color: var(--dark-green);
+  color: var(--white);
+}
+
+
+/* =========================================================================
+   3. TRAJECTORY  (teaser card  →  click  →  map + timeline + story)
+   ========================================================================= */
+.hx-traj-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: clamp(26px, 4vw, 44px);
+  overflow: hidden;
+  border: 0;
+  border-radius: 28px;
+  background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 100%);
+  color: var(--white);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  box-shadow: 0 26px 50px rgba(24, 61, 55, .28);
+  transition: transform .4s var(--hx-ease), box-shadow .4s var(--hx-ease);
+}
+
+.hx-traj-card::after {
+  content: "";
+  position: absolute;
+  right: -90px;
+  top: -90px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(216, 238, 230, .3), transparent 68%);
+  transition: transform .8s var(--hx-ease);
+}
+
+.hx-traj-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 34px 60px rgba(24, 61, 55, .34);
+}
+
+.hx-traj-card:hover::after {
+  transform: scale(1.25);
+}
+
+.hx-traj-card:focus-visible {
+  outline: 3px solid var(--mint);
+  outline-offset: 4px;
+}
+
+.hx-traj-card .hx-eyebrow {
+  color: var(--mint);
+}
+
+.hx-traj-title {
+  position: relative;
+  display: block;
+  max-width: 34rem;
+  margin: 0 0 16px;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  font-weight: 700;
+}
+
+.hx-traj-text {
+  position: relative;
+  display: block;
+  max-width: 38rem;
+  margin: 0 0 26px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, .82);
+}
+
+.hx-traj-cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  border-bottom: 1.5px solid rgba(255, 255, 255, .5);
+  padding-bottom: 3px;
+}
+
+.hx-traj-cta i {
+  font-style: normal;
+  transition: transform .3s var(--hx-ease);
+}
+
+.hx-traj-card:hover .hx-traj-cta i {
+  transform: translateX(5px);
+}
+
+.hx-traj-icon {
+  position: absolute;
+  z-index: 1;
+  top: clamp(22px, 3vw, 34px);
+  right: clamp(22px, 3vw, 34px);
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 50%;
+  font-size: 1.15rem;
+  transition: transform .5s var(--hx-ease), background .3s, color .3s;
+}
+
+.hx-traj-card:hover .hx-traj-icon {
+  background: var(--white);
+  color: var(--dark-green);
+}
+
+.hx-traj-card.is-open .hx-traj-icon {
+  transform: rotate(180deg);
+}
+
+/* smooth height expand */
+.hx-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .8s var(--hx-ease);
+}
+
+.hx-collapse.is-open {
+  grid-template-rows: 1fr;
+}
+
+.hx-collapse-inner {
+  min-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: visibility 0s linear .8s;
+}
+
+.hx-collapse.is-open .hx-collapse-inner {
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.hx-panel {
+  margin-top: 20px;
+  padding: clamp(18px, 3vw, 34px);
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  background: var(--white);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s ease, transform .7s var(--hx-ease);
+}
+
+.hx-collapse.is-open .hx-panel {
+  opacity: 1;
+  transform: none;
+  transition-delay: .25s;
+}
+
+.hx-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--white);
+}
+
+/* timeline */
+.hx-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  margin: 38px 0 6px;
+  padding: 0;
+  list-style: none;
+}
+
+.hx-timeline::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: calc(100% / 16);
+  right: calc(100% / 16);
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-green), var(--accent-green));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1.3s var(--hx-ease) .35s;
+}
+
+.hx-collapse.is-open .hx-timeline::before {
+  transform: scaleX(1);
+}
+
+.hx-stop {
+  position: relative;
+  padding-top: 32px;
+  text-align: center;
+}
+
+.hx-stop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  box-sizing: border-box;
+  border: 3px solid var(--primary-green);
+  border-radius: 50%;
+  background: var(--soft-green);
+  transform: scale(0);
+  transition: transform .45s cubic-bezier(.3, 1.6, .5, 1), background .3s;
+}
+
+.hx-collapse.is-open .hx-stop::before {
+  transform: scale(1);
+  transition-delay: calc(var(--i) * 120ms + .4s), 0s;
+}
+
+.hx-stop:hover::before {
+  background: var(--primary-green);
+}
+
+.hx-stop strong {
+  display: block;
+  font-size: .95rem;
+  color: var(--text);
+}
+
+.hx-stop span {
+  display: block;
+  margin-top: 2px;
+  font-size: .76rem;
+  color: var(--text-muted);
+}
+
+.hx-story {
+  margin: 30px 0 0;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--text);
+}
+
+.hx-story a {
+  color: #6b3dac;
+}
+
+
+/* =========================================================================
+   4. NEWS — side-by-side scrollable filter chips (+ arrows) and a grid
+   Every .news-card keeps its text, links, badge and date exactly as
+   before, and keeps the hover-lift effect already defined in
+   main_style.css. Only the container layout, chip row and category-tag
+   colour are touched here.
+   ========================================================================= */
+.news-section {
+  background: var(--section-bg) !important;
+}
+
+.card-badge {
+  background: var(--tag-green) !important;
+  color: var(--primary-green) !important;
+  border-color: var(--border-light) !important;
+}
+
+.hx-chip-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 28px;
+}
+
+.hx-chip-row {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 2px;
+}
+
+.hx-chip-row::-webkit-scrollbar {
+  display: none;
+}
+
+.hx-chip {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 9px 20px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--white);
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  transition: background .3s var(--hx-ease), color .3s var(--hx-ease), border-color .3s var(--hx-ease), transform .2s var(--hx-ease);
+}
+
+.hx-chip:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-green);
+}
+
+.hx-chip.is-active {
+  background: var(--dark-green);
+  border-color: var(--dark-green);
+  color: var(--white);
+}
+
+.hx-chip-nav {
+  display: flex;
+  flex: none;
+  gap: 8px;
+}
+
+.hx-chip-arrow {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform .2s ease, background-color .2s ease, border-color .2s ease, opacity .2s ease;
+}
+
+.hx-chip-arrow:hover:not(:disabled) {
+  transform: scale(1.08);
+  border-color: var(--accent-green);
+}
+
+.hx-chip-arrow:disabled {
+  opacity: .35;
+  cursor: default;
+}
+
+/* side-by-side news track (arrows + swipe/trackpad scroll); card look stays in main_style.css */
+.hx-count { font-weight: 500; opacity: .75; margin-left: 2px; }
+.hx-news-status { flex: none; font-size: .82rem; color: var(--text); opacity: .7; white-space: nowrap; }
+.hx-chip-row { flex: 1 1 auto; min-width: 0; }
+
+.news-container {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  cursor: default !important;
+  gap: 20px !important;
+  padding: 14px 4px 26px !important;
+  scrollbar-width: thin;
+}
+
+.news-card {
+  flex: 0 0 340px !important;
+  width: 340px;
+  min-width: 0 !important;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 620px) {
+  .news-card { flex-basis: 86% !important; width: 86%; }
+  .hx-news-status { display: none; }
+}
+
+
+/* =========================================================================
+   Responsive
+   ========================================================================= */
+@media (max-width: 960px) {
+  .hx-hero {
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+
+  .hx-profile {
+    justify-self: center;
+    margin-right: 22px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hx-areas {
+    grid-template-columns: 1fr;
+  }
+
+  .hx-areas li:nth-child(5) .hx-area {
+    max-width: 100%;
+  }
+
+  .hx-area {
+    padding: 22px 20px;
+    gap: 16px;
+  }
+
+  /* timeline becomes vertical */
+  .hx-timeline {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 28px 0 4px 6px;
+  }
+
+  .hx-timeline::before {
+    top: 6px;
+    bottom: 6px;
+    left: 9px;
+    right: auto;
+    width: 2px;
+    height: auto;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  .hx-collapse.is-open .hx-timeline::before {
+    transform: scaleY(1);
+  }
+
+  .hx-stop {
+    padding: 0 0 0 42px;
+    text-align: left;
+  }
+
+  .hx-stop::before {
+    left: 0;
+    top: 1px;
+    margin-left: 0;
+  }
+
+  .hx-traj-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hx-traj-title {
+    padding-right: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .hx-reveal,
+  .hx-panel {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hx *,
+  .hx *::before,
+  .hx *::after {
+    animation: none !important;
+    transition-duration: .01ms !important;
+    transition-delay: 0s !important;
+  }
+}
+
+
+/* solid green footer (replaces the old linear-gradient copyright bar) */
+.footer {
+  background: var(--dark-green) !important;
+  background-image: none !important;
+  color: #dbe9e2 !important;
+  border-top: 0 !important;
+}
+.footer p, .footer a { color: #dbe9e2 !important; }
+
+/* ---------- header dropdowns (desktop): stay open while moving the pointer into the menu ---------- */
+@media (min-width: 769px) {
+  .nav-menu .dropdown::after {            /* invisible bridge over the gap between the button and its menu */
+    content: ""; position: absolute; left: -10px; right: -10px; top: 100%; height: 18px;
+  }
+  .nav-menu .dropdown .dropdown-menu {    /* short grace period before it closes */
+    transition: opacity .2s ease .25s, visibility 0s linear .45s;
+  }
+  .nav-menu .dropdown:hover .dropdown-menu,
+  .nav-menu .dropdown:focus-within .dropdown-menu {
+    transition: opacity .15s ease 0s, visibility 0s linear 0s;
+  }
+}
+
+/* current page in the header (set by js/site.js) */
+.nav-menu a[aria-current="page"],
+.nav-menu .dropdown.is-current > .dropdown-toggle { color: var(--primary-green); font-weight: 600; }
+
+/* ---------- slimmer header (all pages): about 74px instead of 99px ---------- */
+.navbar .logo { margin: 0; line-height: 1.15; }
+.navbar .nav-container { padding-top: 19px; padding-bottom: 19px; }
+@media (max-width: 768px) { .navbar .nav-container { padding-top: 14px; padding-bottom: 14px; } }
+/* Home: move the first screen up by the height the header lost */
+.bio-section { padding-top: 105px !important; }
+@media (max-width: 768px) { .bio-section { padding-top: 75px !important; } }

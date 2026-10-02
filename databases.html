@@ -1,266 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>ASLAB &mdash; Databases</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-  <link href="https://fonts.googleapis.com/css?family=B612+Mono|Cabin:400,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASLab &mdash; Databases &amp; Webservers</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612+Mono|Cabin:400,700&display=swap">
   <link rel="stylesheet" href="css/main_style.css">
-
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/homepage-v2.css">
+  <link rel="stylesheet" href="css/aslab-pages.css">
 </head>
-
-<header>
-  <nav class="navbar">
-    <div class="nav-container">
-      <h1 class="logo">ASLab</h1>
-
-      <!-- Hamburger button (visible on mobile only) -->
-      <div class="hamburger">
-        &#9776; <!-- Unicode hamburger icon -->
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">ASLab</h1>
+        <!-- Hamburger button (visible on mobile only) -->
+        <div class="hamburger" aria-label="Menu">&#9776;</div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="collaborators.html">Collaborators</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Resources</a>
+            <ul class="dropdown-menu">
+              <li><a href="databases.html">Databases &amp; Webservers</a></li>
+              <li><a href="infrastructure.html">Computational Infrastructure</a></li>
+              <li><a href="software.html">Software</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">More</a>
+            <ul class="dropdown-menu">
+              <li><a href="organisation.html">Organisation</a></li>
+              <li><a href="funding.html">Funding</a></li>
+              <li><a href="opportunities.html">Opportunities</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
+    </nav>
+  </header>
 
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="people.html">People</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="collaborators.html">Collaborators</a></li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Resources</a>
-          <ul class="dropdown-menu">
-            <li><a href="databases.html">Databases & Webservers</a></li>
-            <li><a href="infrastructure.html">Computational Infrastructure</a></li>
-            <li><a href="software.html">Software</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">More</a>
-          <ul class="dropdown-menu">
-            <li><a href="organisation.html">Organisation</a></li>
-            <li><a href="funding.html">Funding</a></li>
-            <li><a href="opportunities.html">Opportunities</a></li>
-          </ul>
-        </li>
-
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <section class="page-header">
+    <div class="page-width">
+      <h1>Databases &amp; Webservers</h1>
     </div>
-  </nav>
-</header>
+  </section>
 
-<section class="people-header">
-  <div class="container">
-    <h1 class="people-title">Databases & Webservers</h1>
-  </div>
+  <main class="page resource-page">
+  <section class="toolbar" aria-label="Database and webserver search and filters">
+    <label class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search database, webserver, keyword…" autocomplete="off"></label>
+    <div class="filter-row" role="group" aria-label="Research area filters">
+      <button type="button" class="filter-button active" data-filter="all">All</button>
+      <button type="button" class="filter-button" data-filter="natural">Natural Products</button>
+      <button type="button" class="filter-button" data-filter="exposome">Exposome &amp; One Health</button>
+      <button type="button" class="filter-button" data-filter="systems">Systems Modelling</button>
+      <button type="button" class="filter-button" data-filter="other">Other</button>
+    </div>
+  </section>
+  <div class="results-top"><div>Databases &amp; Webservers</div><div id="activeLabel">All research areas</div></div>
+  <section class="card-grid">
+<div class="card resource-card filter-card" data-topic="natural" data-drawer='<div class="drawer-label">Natural Product Spaces</div><h2>IMPPAT</h2><p class="drawer-text">Indian Medicinal Plants, Phytochemistry And Therapeutics.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/imppat" target="_blank" rel="noopener">Open IMPPAT ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/imppat_home.png" alt="IMPPAT"></div><div class="resource-code">DATABASE</div><h3>IMPPAT</h3><p class="desc">Indian Medicinal Plants, Phytochemistry And Therapeutics</p><div class="badges"><span class="badge">Natural Products</span><span class="badge">Drug Discovery</span></div><a class="card-link" href="https://cb.imsc.res.in/imppat" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="natural" data-drawer='<div class="drawer-label">Natural Product Spaces</div><h2>sCentInDB</h2><p class="drawer-text">DataBase of Essential oil Chemical profiles of Medicinal plants of India.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/scentindb" target="_blank" rel="noopener">Open sCentInDB ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/scentindb_home.png" alt="sCentInDB"></div><div class="resource-code">DATABASE</div><h3>sCentInDB</h3><p class="desc">DataBase of Essential oil Chemical profiles of Medicinal plants of India</p><div class="badges"><span class="badge">Natural Products</span><span class="badge">Essential Oils</span></div><a class="card-link" href="https://cb.imsc.res.in/scentindb" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="natural" data-drawer='<div class="drawer-label">Natural Product Spaces</div><h2>MeFSAT</h2><p class="drawer-text">Medicinal Fungi Secondary metabolites And Therapeutics.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/mefsat/" target="_blank" rel="noopener">Open MeFSAT ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/mefsat_home.png" alt="MeFSAT"></div><div class="resource-code">DATABASE</div><h3>MeFSAT</h3><p class="desc">Medicinal Fungi Secondary metabolites And Therapeutics</p><div class="badges"><span class="badge">Natural Products</span><span class="badge">Medicinal Fungi</span></div><a class="card-link" href="https://cb.imsc.res.in/mefsat/" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="exposome" data-drawer='<div class="drawer-label">Exposome & One Health</div><h2>DEDuCT</h2><p class="drawer-text">Database of Endocrine Disrupting Chemicals and their Toxicity profiles.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/deduct" target="_blank" rel="noopener">Open DEDuCT ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/deduct_home.png" alt="DEDuCT"></div><div class="resource-code">DATABASE</div><h3>DEDuCT</h3><p class="desc">Database of Endocrine Disrupting Chemicals and their Toxicity profiles</p><div class="badges"><span class="badge">Exposome</span><span class="badge">Toxicology</span></div><a class="card-link" href="https://cb.imsc.res.in/deduct" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="exposome" data-drawer='<div class="drawer-label">Exposome & One Health</div><h2>ExHuMId</h2><p class="drawer-text">Exposome of Human Milk across India.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/exhumid" target="_blank" rel="noopener">Open ExHuMId ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/exhumid_home.png" alt="ExHuMId"></div><div class="resource-code">KNOWLEDGEBASE</div><h3>ExHuMId</h3><p class="desc">Exposome of Human Milk across India</p><div class="badges"><span class="badge">Exposome</span><span class="badge">One Health</span></div><a class="card-link" href="https://cb.imsc.res.in/exhumid" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="exposome" data-drawer='<div class="drawer-label">Exposome & One Health</div><h2>FCCP</h2><p class="drawer-text">A repository of Fragrance Chemicals in Children’s Products.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/fccp" target="_blank" rel="noopener">Open FCCP ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/fccp_home.png" alt="FCCP"></div><div class="resource-code">REPOSITORY</div><h3>FCCP</h3><p class="desc">A repository of Fragrance Chemicals in Children’s Products</p><div class="badges"><span class="badge">Exposome</span><span class="badge">Chemicals</span></div><a class="card-link" href="https://cb.imsc.res.in/fccp" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="exposome" data-drawer='<div class="drawer-label">Exposome & One Health</div><h2>TExAs</h2><p class="drawer-text">Human Tissue-specific Exposome Atlas.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/texas" target="_blank" rel="noopener">Open TExAs ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/texas_home.png" alt="TExAs"></div><div class="resource-code">ATLAS</div><h3>TExAs</h3><p class="desc">Human Tissue-specific Exposome Atlas</p><div class="badges"><span class="badge">Exposome</span><span class="badge">Atlas</span></div><a class="card-link" href="https://cb.imsc.res.in/texas" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="exposome" data-drawer='<div class="drawer-label">Exposome & One Health</div><h2>NEUROTOXKB</h2><p class="drawer-text">Neurotoxicants Knowledgebase.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/neurotoxkb" target="_blank" rel="noopener">Open NEUROTOXKB ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/neurotoxkb_home.png" alt="NEUROTOXKB"></div><div class="resource-code">KNOWLEDGEBASE</div><h3>NEUROTOXKB</h3><p class="desc">Neurotoxicants Knowledgebase</p><div class="badges"><span class="badge">Exposome</span><span class="badge">Neurotoxicity</span></div><a class="card-link" href="https://cb.imsc.res.in/neurotoxkb" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="exposome" data-drawer='<div class="drawer-label">Exposome & One Health</div><h2>ViCEKb</h2><p class="drawer-text">Vitiligo-linked Chemical Exposome Knowledgebase.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/vicekb" target="_blank" rel="noopener">Open ViCEKb ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/vicekb_home.png" alt="ViCEKb"></div><div class="resource-code">KNOWLEDGEBASE</div><h3>ViCEKb</h3><p class="desc">Vitiligo-linked Chemical Exposome Knowledgebase</p><div class="badges"><span class="badge">Exposome</span><span class="badge">Knowledgebase</span></div><a class="card-link" href="https://cb.imsc.res.in/vicekb" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="exposome" data-drawer='<div class="drawer-label">Exposome & One Health</div><h2>UVREK</h2><p class="drawer-text">UltraViolet Radiation Expression Knowledgebase.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/uvrek" target="_blank" rel="noopener">Open UVREK ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/uvrek_home.png" alt="UVREK"></div><div class="resource-code">KNOWLEDGEBASE</div><h3>UVREK</h3><p class="desc">UltraViolet Radiation Expression Knowledgebase</p><div class="badges"><span class="badge">Exposome</span><span class="badge">Radiation</span></div><a class="card-link" href="https://cb.imsc.res.in/uvrek" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="exposome" data-drawer='<div class="drawer-label">Exposome & One Health</div><h2>Stressor-AOP Network for Plastic Additives</h2><p class="drawer-text">Stressor-AOP Network for Plastic Additives.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/saopadditives" target="_blank" rel="noopener">Open resource ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/saopadditives_home.png" alt="Stressor-AOP Network for Plastic Additives"></div><div class="resource-code">NETWORK</div><h3>Stressor-AOP Network for Plastic Additives</h3><p class="desc">Stressor-AOP Network for Plastic Additives</p><div class="badges"><span class="badge">Exposome</span><span class="badge">AOP</span></div><a class="card-link" href="https://cb.imsc.res.in/saopadditives" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="exposome" data-drawer='<div class="drawer-label">Exposome & One Health</div><h2>Heavy Metal-specific Toxicity Networks</h2><p class="drawer-text">Heavy Metal-specific Toxicity Networks.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/heavymetaltox" target="_blank" rel="noopener">Open resource ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/heavymetaltox_home.png" alt="Heavy Metal-specific Toxicity Networks"></div><div class="resource-code">NETWORK</div><h3>Heavy Metal-specific Toxicity Networks</h3><p class="desc">Heavy Metal-specific Toxicity Networks</p><div class="badges"><span class="badge">Exposome</span><span class="badge">Toxicology</span></div><a class="card-link" href="https://cb.imsc.res.in/heavymetaltox" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="exposome" data-drawer='<div class="drawer-label">Exposome & One Health</div><h2>ReCAnt</h2><p class="drawer-text">Resource on Chemicals Used in Aquaculture and Their Ecotoxicity.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/recant" target="_blank" rel="noopener">Open ReCAnt ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/recant_home.png" alt="ReCAnt"></div><div class="resource-code">RESOURCE</div><h3>ReCAnt</h3><p class="desc">Resource on Chemicals Used in Aquaculture and Their Ecotoxicity</p><div class="badges"><span class="badge">Exposome</span><span class="badge">Ecotoxicity</span></div><a class="card-link" href="https://cb.imsc.res.in/recant" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="systems" data-drawer='<div class="drawer-label">Systems Modelling</div><h2>Aspertome</h2><p class="drawer-text">Aspertome.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/aspertome" target="_blank" rel="noopener">Open Aspertome ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/aspertome_home.png" alt="Aspertome"></div><div class="resource-code">RESOURCE</div><h3>Aspertome</h3><p class="desc">ASLab resource for systems modelling</p><div class="badges"><span class="badge">Systems Modelling</span></div><a class="card-link" href="https://cb.imsc.res.in/aspertome" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="systems" data-drawer='<div class="drawer-label">Systems Modelling</div><h2>T9GPred</h2><p class="drawer-text">Type 9 secretion system and Gliding motility Prediction.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/t9gpred" target="_blank" rel="noopener">Open T9GPred ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/t9gpred_home.png" alt="T9GPred"></div><div class="resource-code">WEBSERVER</div><h3>T9GPred</h3><p class="desc">Type 9 secretion system and Gliding motility Prediction</p><div class="badges"><span class="badge">Systems Modelling</span><span class="badge">Prediction</span></div><a class="card-link" href="https://cb.imsc.res.in/t9gpred" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="other" data-drawer='<div class="drawer-label">Other Resources</div><h2>EPEK</h2><p class="drawer-text">Ectopic Pregnancy Expression Knowledgebase.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/epek" target="_blank" rel="noopener">Open EPEK ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/epek_home.png" alt="EPEK"></div><div class="resource-code">KNOWLEDGEBASE</div><h3>EPEK</h3><p class="desc">Ectopic Pregnancy Expression Knowledgebase</p><div class="badges"><span class="badge">Knowledgebase</span></div><a class="card-link" href="https://cb.imsc.res.in/epek" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="other" data-drawer='<div class="drawer-label">Other Resources</div><h2>AgingHallmarksDB</h2><p class="drawer-text">AgingHallmarksDB.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/aginghallmarksdb" target="_blank" rel="noopener">Open AgingHallmarksDB ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/aginghallmarksdb_home.png" alt="AgingHallmarksDB"></div><div class="resource-code">DATABASE</div><h3>AgingHallmarksDB</h3><p class="desc">A database resource on aging hallmarks</p><div class="badges"><span class="badge">Aging</span><span class="badge">Database</span></div><a class="card-link" href="https://cb.imsc.res.in/aginghallmarksdb" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="other" data-drawer='<div class="drawer-label">Other Resources</div><h2>TickMapKB</h2><p class="drawer-text">Spatial Knowledgebase of Tick Species in India.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/tickmapkb" target="_blank" rel="noopener">Open TickMapKB ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/tickmapkb_home.png" alt="TickMapKB"></div><div class="resource-code">KNOWLEDGEBASE</div><h3>TickMapKB</h3><p class="desc">Spatial Knowledgebase of Tick Species in India</p><div class="badges"><span class="badge">Spatial</span><span class="badge">One Health</span></div><a class="card-link" href="https://cb.imsc.res.in/tickmapkb" target="_blank" rel="noopener">Open resource ↗</a></div>
+<div class="card resource-card filter-card" data-topic="other" data-drawer='<div class="drawer-label">Other Resources</div><h2>NANHA</h2><p class="drawer-text">Neurostimulation in Atypical Neurodevelopment: a Harmonized Atlas.</p><div class="drawer-actions"><a href="https://cb.imsc.res.in/nanha" target="_blank" rel="noopener">Open NANHA ↗</a></div>'><div class="resource-image-wrap"><img class="resource-image" loading="lazy" src="images/nanha_home.png" alt="NANHA"></div><div class="resource-code">KNOWLEDGEBASE</div><h3>NANHA</h3><p class="desc">Neurostimulation in Atypical Neurodevelopment: a Harmonized Atlas</p><div class="badges"><span class="badge">Neurodevelopment</span><span class="badge">Atlas</span></div><a class="card-link" href="https://cb.imsc.res.in/nanha" target="_blank" rel="noopener">Open resource ↗</a></div>
 </section>
+  <div id="emptyState" class="empty" hidden><strong>No resources found.</strong><p>Try another name, keyword, or research area.</p></div>
+  </main>
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="drawer" id="detailDrawer" aria-label="Resource details"><button class="drawer-close" id="drawerClose" aria-label="Close">×</button><div id="drawerContent"></div></aside>
 
-<section class="np-grid-section">
-  <h2 class="section-title">
-    Compilation, Curation, and Exploration of Natural Product Spaces for Drug Discovery Inspired by Traditional
-    Knowledge
-  </h2>
-
-  <div class="np-grid">
-    <div class="np-card">
-
-      <a href="https://cb.imsc.res.in/imppat">IMPPAT &mdash; Indian Medicinal Plants, Phytochemistry And Therapeutics
-        <br><br><img src="images/imppat_home.png" alt="IMPPAT Summary" width="100%" height="90%" /></a>
+  <footer class="footer">
+    <div class="container">
+      <p>The Institute of Mathematical Sciences, Chennai 600113, India</p>
+      <p>Copyright © 2026 ASLab - All rights reserved</p>
     </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/scentindb">sCentInDB &mdash; DataBase of Essential oil Chemical profiles of Medicinal
-        plants of India
-        <br><br><img src="images/scentindb_home.png" alt="IMPPAT Summary" width="100%" height="90%" /></a>
-    </div>
-
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/mefsat/">MeFSAT &mdash; <u>Me</u>dicinal <u>F</u>ungi <u>S</u>econdary metabolites <u>A</u>nd <u>T</u>herapeutics
-        <br><br><img src="images/mefsat_home.png" alt="IMPPAT Summary" width="100%" /></a>
-
-    </div>
-  </div>
-</section>
-
-<section class="np-grid-section">
-  <h2 class="section-title">
-    Linking Exposome and One Health by Leveraging Computational Data Science
-  </h2>
-
-
-  <div class="np-grid">
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/deduct">DEDuCT &mdash; <u>D</u>atabase of <u>E</u>ndocrine
-        <u>D</u>isr<u>u</u>pting <u>C</u>hemicals and their <u>T</u>oxicity profiles
-        <br><br><img src="images/deduct_home.png" width="100%" /></a>
-      </a>
-    </div>
-
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/exhumid">ExHuMId &mdash; <u>Ex</u>posome of <u>Hu</u>man <u>M</u>ilk across
-        <u>I</u>n<u>d</u>ia
-        <br><br><img src="images/exhumid_home.png" width="100%" height="90%" /></a>
-      </a>
-    </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/fccp">FCCP &mdash; A repository of <u>F</u>ragrance <u>C</u>hemicals in
-        <u>C</u>hildren's <u>P</u>roducts
-        <br><br><img src="images/fccp_home.png" width="100%" height="90%" /></a>
-      </a>
-    </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/texas">TExAs &mdash; Human <u>T</u>issue-specific <u>Ex</u>posome
-        <u>A</u>tla<u>s</u>
-        <br><br><img src="images/texas_home.png" width="100%" height="90%" /></a>
-      </a>
-    </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/neurotoxkb">NEUROTOXKB &mdash; <u>Neurotox</u>icants <u>K</u>nowledge<u>b</u>ase
-        <br><br><img src="images/neurotoxkb_home.png" width="100%" /></a>
-      </a>
-    </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/vicekb">ViCEKb &mdash; <u>Vi</u>tiligo-linked <u>C</u>hemical <u>E</u>xposome
-        <u>K</u>nowledge<u>b</u>ase
-        <br><br><img src="images/vicekb_home.png" width="100%" height="80%" /></a>
-      </a>
-    </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/uvrek">UVREK &mdash; <u>U</u>ltra<u>V</u>iolet <u>R</u>adiation <u>E</u>xpression
-        <u>K</u>nowledgebase
-        <br><br><img src="images/uvrek_home.png" width="100%" /></a>
-      </a>
-    </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/saopadditives">Stressor-AOP Network for Plastic Additives
-        <br><br><img src="images/saopadditives_home.png" width="100%" height="90%" /></a>
-      </a>
-    </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/heavymetaltox">Heavy Metal-specific Toxicity Networks
-        <br><br><img src="images/heavymetaltox_home.png" width="100%" height="90%" /></a>
-      </a>
-    </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/recant">ReCAnt &mdash; <u>Re</u>source on <u>C</u>hemicals Used in <u>A</u>quaculture a<u>n</u>d Their Eco<u>t</u>oxicity
-        <br><br><img src="images/recant_home.png" width="100%" height="90%" /></a>
-      </a>
-    </div>
-
-    <!-- <div class="np-card">
-      <a href="https://cb.imsc.res.in/tictok">TICToK &mdash; <u>T</u>attoo <u>I</u>nk <u>C</u>hemicals and associated <u>To</u>xicities <u>K</u>nowledgebase
-      <img src="images/tictok_home.png" width="100%" height="90%" /></a>
-      </a>
-    </div>-->
-
-
-  </div>
-</section>
-
-<section class="np-grid-section">
-  <h2 class="section-title"> Systems Modelling of Metabolism and Protein Secretion Systems</h2>
-
-  <div class="np-grid">
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/aspertome">Aspertome
-        <br><br><img src="images/aspertome_home.png" width="100%" height="90%" /></a>
-      </a>
-    </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/t9gpred">T9GPred &mdash; <u>T</u>ype <u>9</u>secretion system and <u>G</u>liding
-        motility <u>P</u>rediction
-        <br><br><img src="images/t9gpred_home.png" width="100%" height="90%" /></a>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<section class="np-grid-section">
-  <h2 class="section-title"> Other Resources </h2>
-  <div class="np-grid">
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/epek">EPEK &mdash; <u>E</u>ctopic <u>P</u>regnancy <u>E</u>xpression
-        <u>K</u>nowledgebase
-        <br><br><img src="images/epek_home.png" width="100%" /></a>
-      </a>
-    </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/aginghallmarksdb">AgingHallmarksDB
-        <br><br><img src="images/aginghallmarksdb_home.png" width="100%" /></a>
-      </a>
-    </div>
-
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/tickmapkb">TickMapKB &mdash; Spatial Knowledgebase of Tick Species in India
-        <br><br><img src="images/tickmapkb_home.png" width="100%" /></a>
-      </a>
-    </div>
-    
-    <div class="np-card">
-      <a href="https://cb.imsc.res.in/nanha">NANHA &mdash; <u>N</u>ueurostimulation in <u>A</u>typical <u>N</u>eurodevelopment: a <u>H</u>armonized <u>A</u>tlas
-        <br><br><img src="images/nanha_home.png" width="100%" /></a>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <footer class="footer">
-      <div class="container">
-        <p>The Institute of Mathematical Sciences, Chennai 600113, India</p>
-        <p>Copyright © 2026 ASLab - All rights reserved</p>
-      </div>
-    </footer>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-
-    // Toggle mobile menu
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-
-    // Toggle mobile dropdowns
-    const dropdowns = document.querySelectorAll('.dropdown');
-
-    dropdowns.forEach(drop => {
-      const toggle = drop.querySelector('.dropdown-toggle');
-
-      toggle.addEventListener('click', (e) => {
-        e.preventDefault();             // prevent default link
-        drop.classList.toggle('active'); // show/hide submenu
-      });
-    });
-  });
-
-</script>
+  </footer>
+  <script src="js/site.js"></script>
+  <script src="js/explorer.js"></script>
+  <script src="js/databases.js"></script>
 </body>
-
 </html>

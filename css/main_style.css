@@ -3917,3 +3917,743 @@ h2 {
 a  {
   color: #6b3dac;
 }
+/* =========================================================
+   ASLab Homepage Visual Refresh — 2026
+   Visual-only overrides: existing text, links and font are kept.
+   ========================================================= */
+
+:root {
+  --aslab-ink: #17233c;
+  --aslab-muted: #5e687a;
+  --aslab-accent: #176b78;
+  --aslab-accent-2: #2b8a8f;
+  --aslab-soft: #eef7f7;
+  --aslab-line: #dfe7eb;
+  --aslab-surface: #ffffff;
+  --aslab-page: #f6f8fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--aslab-page);
+  color: var(--aslab-ink);
+}
+
+/* -------------------------
+   Navigation
+   ------------------------- */
+.navbar {
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid rgba(23, 35, 60, 0.08);
+  box-shadow: 0 8px 28px rgba(23, 35, 60, 0.06);
+}
+
+.nav-container {
+  max-width: 1280px;
+  padding: 13px 34px;
+}
+
+.logo {
+  color: var(--aslab-ink);
+  letter-spacing: -0.04em;
+}
+
+.nav-menu {
+  gap: 8px;
+}
+
+.nav-menu > li > a {
+  display: block;
+  padding: 9px 13px;
+  border-radius: 9px;
+  color: #344056;
+  font-size: 0.94rem;
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+.nav-menu > li > a:hover,
+.nav-menu > li > a:focus-visible {
+  background: var(--aslab-soft);
+  color: var(--aslab-accent);
+  transform: translateY(-1px);
+}
+
+.dropdown-menu {
+  margin-top: 8px;
+  border: 1px solid var(--aslab-line);
+  border-radius: 12px;
+  box-shadow: 0 18px 45px rgba(23, 35, 60, 0.12);
+  overflow: hidden;
+}
+
+.dropdown-menu li a:hover {
+  background: var(--aslab-soft);
+  color: var(--aslab-accent);
+  padding-left: 24px;
+}
+
+/* -------------------------
+   Hero / profile area
+   ------------------------- */
+.bio-section {
+  min-height: auto;
+  padding: 130px 32px 78px;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(53, 157, 163, .13), transparent 27%),
+    radial-gradient(circle at 92% 8%, rgba(76, 111, 183, .10), transparent 25%),
+    linear-gradient(180deg, #f9fcfc 0%, #f1f6f7 100%);
+}
+
+.bio-section::before,
+.bio-section::after {
+  width: 300px;
+  height: 300px;
+  opacity: .16;
+  filter: blur(90px);
+}
+
+.panel-wrapper {
+  width: min(1180px, 100%);
+  max-width: 1180px;
+  margin: 0 auto !important;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.left-card,
+.content-card {
+  border: 1px solid rgba(223, 231, 235, .95);
+  box-shadow: 0 12px 35px rgba(23, 35, 60, .07);
+}
+
+.left-card {
+  flex: 0 0 340px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.92);
+  position: relative;
+  overflow: hidden;
+}
+
+.left-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--aslab-accent), #78bfc1);
+}
+
+.profile-img {
+  width: 100%;
+  height: 315px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 12px 28px rgba(23, 35, 60, .13);
+}
+
+.left-card h2 {
+  color: var(--aslab-ink);
+  margin: 10px 0 6px;
+  letter-spacing: -0.02em;
+}
+
+.left-card h4 {
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid var(--aslab-line);
+  color: var(--aslab-accent);
+}
+
+.social-links {
+  margin: 14px 0 4px;
+}
+
+.social-links a {
+  width: 34px;
+  height: 34px;
+  margin: 0 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--aslab-line);
+  border-radius: 50%;
+  color: #4d596d;
+  background: #fff;
+  font-size: 1rem;
+  transition: transform .2s ease, background-color .2s ease, color .2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  background: var(--aslab-accent);
+  color: #fff;
+}
+
+.contact {
+  margin-top: 10px;
+  font-size: 13.5px;
+}
+
+.contact ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.contact li {
+  margin: 9px 0;
+  line-height: 1.5;
+}
+
+.contact a {
+  color: var(--aslab-muted);
+}
+
+.contact li::marker {
+  color: var(--aslab-accent-2);
+}
+
+.right-content {
+  gap: 18px;
+}
+
+.content-card {
+  border-radius: 20px;
+  padding: 27px 30px;
+  background: rgba(255,255,255,.94);
+}
+
+.content-card:first-child {
+  border-left: 4px solid var(--aslab-accent);
+  padding-left: 27px;
+}
+
+.content-card p {
+  color: var(--aslab-muted);
+  line-height: 1.8;
+}
+
+.content-card strong {
+  color: var(--aslab-ink);
+}
+
+.content-card h4 {
+  color: var(--aslab-ink);
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.map-img {
+  border-radius: 14px;
+  border: 1px solid var(--aslab-line);
+  margin-top: 8px;
+}
+
+/* -------------------------
+   News — convert horizontal strip into a clean grid
+   ------------------------- */
+.news-section {
+  padding: 78px 32px 92px;
+  background: #fff;
+  border-top: 1px solid var(--aslab-line);
+}
+
+.news-section .container {
+  max-width: 1180px;
+  padding: 0;
+}
+
+.news-title {
+  text-align: left;
+  font-size: 2.15rem;
+  color: var(--aslab-ink);
+  margin: 0 0 28px;
+  letter-spacing: -0.035em;
+}
+
+.news-title::after {
+  display: none;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  overflow: visible;
+  padding: 0;
+}
+
+.news-card {
+  min-width: 0;
+  min-height: 245px;
+  padding: 22px 22px 20px;
+  border: 1px solid var(--aslab-line);
+  border-left: 3px solid #8bbfc2;
+  border-radius: 15px;
+  box-shadow: 0 7px 22px rgba(23,35,60,.05);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover,
+.news-card:focus-within {
+  transform: translateY(-5px);
+  border-color: #b9dadd;
+  border-left-color: var(--aslab-accent);
+  box-shadow: 0 16px 32px rgba(23,35,60,.10);
+}
+
+.card-headline {
+  color: var(--aslab-ink);
+  font-size: 1.08rem;
+  line-height: 1.45;
+  margin-top: 0;
+}
+
+.card-headline a,
+.no-underline .card-headline {
+  color: var(--aslab-ink);
+}
+
+.no-underline:hover .card-headline {
+  color: var(--aslab-accent);
+}
+
+.card-subtext {
+  color: #718096;
+  line-height: 1.5;
+}
+
+.card-description {
+  color: #596579;
+  line-height: 1.55;
+  font-size: .92rem;
+}
+
+.card-badge {
+  align-self: flex-start;
+  margin-top: auto;
+  background: var(--aslab-soft);
+  color: var(--aslab-accent);
+  border: 1px solid #d5e8e9;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: .68rem;
+  letter-spacing: .06em;
+}
+
+.card-date {
+  margin-bottom: 0;
+  color: #8993a3;
+  font-size: .78rem;
+}
+
+/* -------------------------
+   Footer
+   ------------------------- */
+.footer {
+  background: #17233c;
+  color: rgba(255,255,255,.82);
+  padding: 30px 20px;
+  border-top: 4px solid #3d8d94;
+}
+
+.footer p {
+  margin: 0 0 6px;
+}
+
+/* -------------------------
+   Mobile
+   ------------------------- */
+@media (max-width: 1000px) {
+  .nav-container {
+    padding: 12px 22px;
+  }
+
+  .nav-menu {
+    gap: 2px;
+  }
+
+  .panel-wrapper {
+    max-width: 760px;
+  }
+
+  .left-card {
+    flex-basis: 290px;
+  }
+
+  .profile-img {
+    height: 260px;
+  }
+
+  .news-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .bio-section {
+    padding: 105px 16px 55px;
+  }
+
+  .panel-wrapper {
+    gap: 16px;
+  }
+
+  .left-card,
+  .content-card {
+    border-radius: 16px;
+  }
+
+  .left-card {
+    flex-basis: auto;
+    padding: 20px;
+  }
+
+  .profile-img {
+    height: auto;
+    max-height: 420px;
+  }
+
+  .content-card {
+    padding: 22px;
+  }
+
+  .news-section {
+    padding: 58px 16px 68px;
+  }
+
+  .news-container {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .news-card {
+    min-height: 0;
+  }
+}
+
+
+/* =========================================================
+   ASLab Homepage — Final interactive refinement
+   ========================================================= */
+.homepage {} /* marker for the homepage-specific rules */
+
+/* Your selected homepage palette: mint -> peach -> lilac */
+body {
+  color: #202633;
+}
+
+.bio-section {
+  min-height: auto !important;
+  padding: 130px 32px 78px !important;
+  background: linear-gradient(135deg, #d8f6d7 0%, #f9d6ca 45%, #e2d4f6 100%) !important;
+}
+
+/* Remove decorative circles/glows from the Bio section. */
+.bio-section::before,
+.bio-section::after {
+  display: none !important;
+}
+
+/* Keep the profile card and introduction at their natural heights. */
+.panel-wrapper {
+  align-items: flex-start !important;
+}
+
+.left-card {
+  align-self: flex-start !important;
+  height: fit-content !important;
+}
+
+.right-content {
+  align-self: flex-start !important;
+}
+
+.content-card {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.content-card p {
+  color: #252b36 !important;
+}
+
+.content-card strong,
+.content-card h4,
+.left-card h2,
+.card-headline,
+.news-title {
+  color: #18202b !important;
+}
+
+.contact a,
+.card-subtext,
+.card-description,
+.card-date {
+  color: #303744 !important;
+}
+
+/* Softer, lighter footer */
+.footer {
+  background: linear-gradient(135deg, #dff4dc 0%, #f7ddd2 52%, #e6dcf3 100%) !important;
+  color: #202733 !important;
+  border-top: 1px solid rgba(50, 57, 72, .14) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.75);
+}
+.footer p { color: #202733 !important; }
+
+/* -------------------------
+   Interactive News carousel
+   ------------------------- */
+.news-section {
+  background: rgba(255,255,255,.78) !important;
+  padding: 72px 32px 82px !important;
+}
+
+.news-section .container {
+  max-width: 1180px !important;
+}
+
+.news-title {
+  margin-bottom: 24px !important;
+}
+
+.news-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.news-container {
+  display: flex !important;
+  gap: 18px !important;
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 12px 8px 22px !important;
+  flex: 1;
+  cursor: grab;
+  overscroll-behavior-x: contain;
+}
+
+.news-container::-webkit-scrollbar { display: none; }
+.news-container.dragging { cursor: grabbing; scroll-behavior: auto; }
+
+.news-card {
+  flex: 0 0 330px !important;
+  min-width: 330px !important;
+  min-height: 245px !important;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(72, 82, 98, .13) !important;
+  border-left: 4px solid #a6cfa8 !important;
+  border-radius: 16px !important;
+  background: rgba(255,255,255,.96) !important;
+  box-shadow: 0 8px 22px rgba(38,45,60,.08) !important;
+  transform: translateY(0) scale(1);
+  transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease, border-color .28s ease !important;
+}
+
+.news-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(216,246,215,.42), transparent 38%);
+  transition: opacity .25s ease;
+}
+
+.news-card:hover,
+.news-card:focus-within {
+  transform: translateY(-9px) scale(1.025) !important;
+  border-color: rgba(120,150,125,.45) !important;
+  border-left-color: #d69f8e !important;
+  box-shadow: 0 20px 38px rgba(38,45,60,.16) !important;
+  z-index: 3;
+}
+.news-card:hover::after,
+.news-card:focus-within::after { opacity: 1; }
+
+.news-card .card-headline,
+.news-card .card-description,
+.news-card .card-subtext,
+.news-card .card-badge,
+.news-card .card-date,
+.news-card a {
+  position: relative;
+  z-index: 1;
+}
+
+.news-arrow {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(45,55,70,.16);
+  border-radius: 50%;
+  background: rgba(255,255,255,.92);
+  color: #25303d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 7px 18px rgba(38,45,60,.09);
+  transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease, opacity .2s ease;
+}
+.news-arrow:hover:not(:disabled) {
+  transform: scale(1.08);
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(38,45,60,.14);
+}
+.news-arrow:disabled { opacity: .32; cursor: default; }
+
+/* Small cursor-responsive lift on the main cards, inspired by interactive editorial layouts. */
+.left-card,
+.right-content > .content-card {
+  --rx: 0deg;
+  --ry: 0deg;
+  transform: perspective(1100px) rotateX(var(--rx)) rotateY(var(--ry));
+  transition: transform .25s ease, box-shadow .3s ease;
+}
+.left-card:hover,
+.right-content > .content-card:hover {
+  box-shadow: 0 18px 38px rgba(38,45,60,.12) !important;
+}
+
+/* No instruction text under News. */
+.news-scroll-hint,
+.news-scroll-hint::after,
+.news-scroll-instruction { display: none !important; }
+
+@media (max-width: 768px) {
+  .bio-section { padding: 105px 16px 55px !important; }
+  .news-section { padding: 58px 16px 68px !important; }
+  .news-carousel { gap: 7px; }
+  .news-arrow { flex-basis: 38px; width: 38px; height: 38px; }
+  .news-card { flex-basis: min(82vw, 330px) !important; min-width: min(82vw, 330px) !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .news-container { scroll-behavior: auto; }
+  .news-card, .left-card, .right-content > .content-card { transition: none !important; transform: none !important; }
+}
+/* =========================================================
+   ASLab Homepage — Pastel Tints on the 4 Hero Cards ONLY
+   Nothing else is affected. All other styles remain as-is.
+   ========================================================= */
+
+.left-card {
+  background: linear-gradient(180deg, #f2fbf3 0%, #ffffff 100%) !important;
+}
+
+.content-card.intro-card {
+  background: linear-gradient(180deg, #f2fbf3 0%, #ffffff 100%) !important;
+}
+
+.content-card.trajectory-card-home {
+  background: linear-gradient(180deg, #fdf5f0 0%, #ffffff 100%) !important;
+}
+
+.content-card.story-card {
+  background: linear-gradient(180deg, #f5f1fb 0%, #ffffff 100%) !important;
+}
+/* =========================================================
+   Equal-height hero cards + social links on one line
+   Put this at the VERY BOTTOM of main_style.css
+   ========================================================= */
+
+/* --- 1. Column wrapper: use CSS Grid for guaranteed equal heights --- */
+.panel-wrapper {
+  display: grid !important;
+  grid-template-columns: 360px 1fr !important;
+  gap: 30px !important;
+  align-items: stretch !important;
+  max-width: 1100px !important;
+  margin: auto !important;
+}
+
+/* --- 2. Left profile card: fill full column height --- */
+.left-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  align-self: stretch !important;
+  flex: none !important;
+}
+
+/* --- 3. Right column: stack cards, spread evenly, full height --- */
+.right-content {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+  align-self: stretch !important;
+  gap: 20px !important;
+}
+
+/* --- 4. Each right card: grow to fill, no max-height limits --- */
+.right-content > .content-card {
+  flex: 1 1 auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* --- 5. Social links: all on one line, no wrapping --- */
+.social-links {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  white-space: nowrap !important;
+}
+
+.social-links a {
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  width: 34px !important;
+  height: 34px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1rem !important;
+}
+
+/* --- 6. Push "Research Areas" block down to balance the profile card --- */
+.left-card .contact {
+  margin-top: auto !important;
+}
+
+/* --- 7. Mobile: turn off equal-height logic, restore stacking --- */
+@media (max-width: 768px) {
+  .panel-wrapper {
+    display: block !important;
+  }
+  .left-card,
+  .right-content {
+    display: block !important;
+    height: auto !important;
+  }
+  .right-content > .content-card {
+    flex: none !important;
+    margin-bottom: 20px !important;
+  }
+  .left-card {
+    margin-bottom: 20px !important;
+  }
+  .left-card .contact {
+    margin-top: 15px !important;
+  }
+  .social-links {
+    flex-wrap: wrap !important;
+  }
+}

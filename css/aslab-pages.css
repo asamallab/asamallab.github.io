@@ -1,0 +1,177 @@
+/* =========================================================================
+   ASLab — shared design for all inner pages (Green–Sage theme).
+   Source: ASLab_GreenSage_Final_Root_Glow/aslab-pages.css, with its own header,
+   navigation and footer rules removed — every page uses the Home header and the
+   dark-green footer instead (css/main_style.css + css/homepage-v2.css).
+   Load order: main_style.css → homepage-v2.css → aslab-pages.css → <page>.css
+   ========================================================================= */
+
+/* one font for the whole site: Arial, as set by main_style.css and used on the Research page */
+.page-header, main.page { font-family: Arial, sans-serif; color: var(--ink); }
+main.page h1, main.page h2, main.page h3, main.page h4 { font-family: Arial, sans-serif; }
+main.page *, main.page *::before, main.page *::after, .page-header * { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+:root{--ink:#17231f;--deep:#183d37;--green:#477866;--sage:#6da38c;--mint:#d8eee6;--pale:#eef5f1;--paper:#fff;--bg:#f6f7f4;--line:#dfe7e2;--muted:#68756f;--shadow:0 16px 40px rgba(23,35,31,.08)}
+.page-header{background:#e4f1ec;border-bottom:1px solid var(--line);padding:26px 0}
+.page-width{width:min(1380px,90vw);margin:0 auto}
+.page-header h1{margin:0;font:500 38px/1.15 Arial,sans-serif;letter-spacing:-.025em;color:var(--ink)}
+.page{max-width:1380px;margin:auto;padding:28px 5vw 80px}
+.page-intro{margin:0 0 22px;max-width:1080px;color:var(--muted);font-size:14px;line-height:1.7}
+.toolbar{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:12px;box-shadow:0 8px 25px rgba(23,35,31,.04);display:flex;gap:12px;align-items:center;margin-bottom:18px}
+.search{height:44px;display:flex;align-items:center;gap:9px;flex:1;border:1px solid var(--line);border-radius:12px;padding:0 12px;color:var(--muted);background:#fbfcfb}
+.search span{font-size:22px;line-height:1}
+.search input{width:100%;border:0;outline:0;background:transparent;color:var(--ink);font-size:14px}
+.filter-row{display:flex;gap:6px;align-items:center;overflow:auto}
+.filter-button{height:38px;border:1px solid var(--line);background:var(--paper);border-radius:9px;padding:0 11px;color:var(--muted);white-space:nowrap;cursor:pointer;transition:.18s ease}
+.filter-button:hover{border-color:#a8c5b8;transform:translateY(-1px)}
+.filter-button.active{background:var(--deep);color:#fff;border-color:var(--deep)}
+.results-top{height:42px;display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:12px;padding:0 4px}
+.results-top strong{color:var(--deep)}
+#activeLabel,#repoLabel{font-weight:600;color:var(--green)}
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px;transition:.2s ease;box-shadow:0 7px 20px rgba(23,35,31,.025)}
+.card:hover{border-color:#b8cec3;transform:translateY(-2px);box-shadow:0 12px 28px rgba(23,35,31,.07)}
+.card[hidden]{display:none!important}
+.card h3{font:600 17px/1.3 Arial,sans-serif;margin:0;color:var(--deep)}
+.card p{font-size:12px;line-height:1.6;color:var(--muted);margin:8px 0 0}
+.badges{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0}
+.badge{font-size:9px;text-transform:uppercase;letter-spacing:.07em;color:var(--green);background:var(--pale);border-radius:999px;padding:4px 7px}
+.card-link{display:inline-flex;align-items:center;gap:6px;margin-top:15px;color:var(--deep);font-size:12px;font-weight:700;text-decoration:none}
+.card-link:hover{color:var(--green)}
+.person-card{cursor:pointer}
+.person-top{display:flex;gap:13px;align-items:flex-start}
+.avatar{width:46px;height:46px;border-radius:14px;background:var(--mint);color:var(--deep);display:grid;place-items:center;font:600 14px Arial,sans-serif;flex:none}
+.person-card h3{margin-top:1px}
+.person-inst{font-size:12px;color:var(--muted);line-height:1.5;margin-top:5px}
+.person-topic{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--green);font-weight:700;margin-top:13px}
+.empty{padding:50px;text-align:center;background:var(--paper);border:1px dashed var(--line);border-radius:15px;color:var(--muted);margin-top:14px}
+.empty strong{color:var(--deep)}
+.drawer-backdrop{position:fixed;inset:0;background:rgba(23,35,31,.24);z-index:90}
+.drawer{position:fixed;right:0;top:0;height:100vh;width:min(680px,94vw);background:var(--paper);z-index:91;box-shadow:-20px 0 55px rgba(23,35,31,.16);padding:58px 42px 45px;overflow:auto;transform:translateX(100%);transition:transform .28s ease}
+.drawer.open{transform:translateX(0)}
+.drawer-close{position:absolute;top:18px;right:20px;border:1px solid var(--line);background:var(--paper);width:36px;height:36px;border-radius:50%;font-size:23px;line-height:1;cursor:pointer;color:var(--muted)}
+.drawer h2{font:600 30px/1.2 Arial,sans-serif;color:var(--deep);margin:0 0 18px}
+.drawer-label{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--green);font-weight:700;margin:23px 0 7px}
+.drawer-text{font-size:14px;line-height:1.75;color:#3e4a45}
+.drawer-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.drawer-actions a{border:1px solid var(--line);border-radius:9px;padding:9px 13px;color:var(--deep);text-decoration:none;font-size:12px;font-weight:600}
+.drawer-actions a:hover{background:var(--mint);border-color:var(--mint)}
+.resource-card{display:flex;flex-direction:column;min-height:310px;overflow:hidden}
+.resource-card{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  border-left:4px solid var(--green);
+  --mx:50%;
+  --my:50%;
+  transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+.resource-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  border-radius:inherit;
+  background:radial-gradient(
+    circle 185px at var(--mx) var(--my),
+    rgba(109,163,140,.30) 0%,
+    rgba(109,163,140,.16) 28%,
+    rgba(109,163,140,.07) 48%,
+    transparent 72%
+  );
+  opacity:0;
+  transition:opacity .16s ease;
+}
+.resource-card:hover{
+  border-left-color:#c94b4b;
+  transform:translateY(-3px);
+  box-shadow:
+    0 14px 34px rgba(23,35,31,.10),
+    0 0 0 1px rgba(109,163,140,.12);
+}
+.resource-card:hover::before{opacity:1}
+.resource-card > *{position:relative;z-index:1}
+.resource-card .resource-image-wrap{
+  position:relative;
+  z-index:1;
+}
+.resource-image-wrap{height:150px;margin:-18px -18px 15px;background:var(--pale);overflow:hidden;border-bottom:1px solid var(--line)}
+.resource-image{width:100%;height:100%;display:block;object-fit:contain;background:#fff}
+.resource-code,.repo-language{font:600 11px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--sage);margin-bottom:7px}
+.resource-card h3{font-size:18px}
+.resource-card .desc{min-height:52px}
+.resource-card .card-link{margin-top:auto}
+.infra-section{margin-top:30px}
+.section-title{font:600 25px Arial,sans-serif;color:var(--deep);margin:0 0 14px}
+.infra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.infra-card{background:var(--paper);border:1px solid var(--line);border-radius:17px;padding:0;overflow:hidden;transition:.2s;box-shadow:0 7px 20px rgba(23,35,31,.025)}
+.infra-card:hover{border-color:#b8cec3;box-shadow:0 12px 28px rgba(23,35,31,.07);transform:translateY(-2px)}
+.infra-photo{display:block;width:100%;height:230px;object-fit:contain;background:#fff}
+.infra-content{padding:19px}
+.infra-type{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--green);font-weight:700}
+.infra-card h3{font:600 20px Arial,sans-serif;margin:5px 0 10px;color:var(--deep)}
+.specs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:14px}
+.spec{background:var(--pale);border-radius:10px;padding:10px}
+.spec strong{display:block;font:600 14px Arial,sans-serif;color:var(--deep)}
+.spec span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:3px}
+.spec-detail{font-size:12px;line-height:1.55;color:var(--muted);margin:12px 0 0}
+.repo-status{padding:12px 15px;border:1px solid var(--line);border-radius:13px;background:var(--paper);font-size:12px;color:var(--muted);margin-bottom:12px}
+.repo-status a{color:var(--green);font-weight:700}
+.repo-card{min-height:220px;display:flex;flex-direction:column}
+.repo-card .desc{min-height:58px}
+.repo-card .card-link{margin-top:auto}
+@media(max-width:1000px){
+  .toolbar{align-items:stretch;flex-direction:column}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .infra-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .page-header{padding:22px 0}
+  .page-width{width:92vw}
+  .page-header h1{font-size:34px}
+  .page{padding:24px 4vw 60px}
+  .card-grid{grid-template-columns:1fr}
+  .infra-grid{grid-template-columns:1fr}
+  .infra-photo{height:210px}
+  .specs{grid-template-columns:repeat(3,1fr)}
+  .drawer{padding:52px 24px 35px}
+  .drawer h2{font-size:25px}
+}
+@media(max-width:470px){
+  .specs{grid-template-columns:1fr}
+  .page-header h1{font-size:32px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important;transition:none!important}
+}
+
+/* ---------- additions ---------- */
+:root {
+  --glow-ring: rgba(91, 140, 120, .55);
+  --glow-soft: rgba(91, 140, 120, .26);
+  --text-strong: #2c3a35;
+  --label-green: #2f5c4c;
+}
+/* title band: sits directly under the fixed Home header; title centred, same size/weight as Research */
+.page-header { margin-top: 74px; text-align: center; }
+.page-header h1 { font: 700 2.4rem/1.2 Arial, sans-serif; letter-spacing: normal; color: #000; text-align: center; }
+@media (max-width: 768px) { .page-header { margin-top: 67px; } .page-header h1 { font-size: 2rem; } }
+
+/* the old site's main_style.css draws a blue side-bar on every .section-title */
+main.page .section-title { border-left: 0; padding-left: 0; }
+
+/* neutralise old main_style.css rules that share class / id names with this design */
+main.page #searchInput, main.page #repoSearch { width: 100%; height: auto; padding: 0; margin: 0; border: 0; border-radius: 0; font-size: 14px; background: transparent; box-shadow: none; }
+main.page .infra-card { display: block; gap: 0; padding: 0; margin-bottom: 0; align-items: initial; }
+
+/* Software: the status line only appears when it has a message */
+.repo-status:empty { display: none; }
+
+/* Collaborators: name and institute are links (no side panel) */
+.collaborators-page .person-card { cursor: default; }
+.collaborators-page .person-link { color: inherit; text-decoration: none; }
+.collaborators-page .person-link:hover { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+.collaborators-page .inst-link { color: inherit; text-decoration: none; }
+.collaborators-page .inst-link:hover { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }

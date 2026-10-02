@@ -1,0 +1,116 @@
+/* ASLab Publications — Green–Sage publications theme
+   (from ASLab_Publications_Final_Theme(2)/publications.css, wrapper/header/footer rules removed),
+   plus the selection metrics strip and the darker left panel. Loaded after aslab-pages.css. */
+.pub-hero{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:24px}
+.eyebrow,.section-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--green);font-weight:700}
+.pub-hero h1{font:600 clamp(34px,4vw,52px)/1 Arial,sans-serif;margin:8px 0 0;letter-spacing:-.04em}
+.hero-note{max-width:420px;color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 2px}
+.pub-toolbar{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:12px;box-shadow:0 8px 25px rgba(23,35,31,.04);display:flex;gap:12px;align-items:center;margin-bottom:20px}
+.search-box{height:44px;display:flex;align-items:center;gap:9px;flex:1;border:1px solid var(--line);border-radius:12px;padding:0 12px;color:var(--muted);background:#fbfcfb}
+.search-box span{font-size:22px;line-height:1}
+.search-box input{width:100%;border:0;outline:0;background:transparent;color:var(--ink);font-size:14px}
+.search-box kbd{font-size:10px;border:1px solid var(--line);border-radius:5px;padding:3px 6px;white-space:nowrap}
+.toolbar-actions{display:flex;gap:6px;align-items:center;overflow:auto}
+.filter-button,.toolbar-actions select{height:38px;border:1px solid var(--line);background:var(--paper);border-radius:9px;padding:0 11px;color:var(--muted);white-space:nowrap;cursor:pointer}
+.filter-button:hover,.filter-button.active{background:var(--deep);color:#fff;border-color:var(--deep)}
+.toolbar-actions select{outline:0}
+.explorer{display:grid;grid-template-columns:235px minmax(0,1fr);gap:18px;align-items:start}
+.side-panel{position:sticky;top:84px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 8px 25px rgba(23,35,31,.035)}
+.side-title{font:600 16px Arial,sans-serif;margin:2px 0 12px}
+.side-heading{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#89938e;margin:18px 8px 7px}
+.side-filter{width:100%;display:flex;justify-content:space-between;text-align:left;border:0;background:transparent;padding:9px 10px;border-radius:8px;color:var(--muted);cursor:pointer;font-size:12px;line-height:1.35}
+.side-filter:hover,.side-filter.active{background:var(--mint);color:var(--deep);font-weight:600}
+.results{min-width:0}
+#activeLabel{font-weight:600;color:var(--green)}
+.pub-row{background:var(--paper);border:1px solid var(--line);border-radius:15px;margin-bottom:9px;display:grid;grid-template-columns:58px 1fr auto;gap:14px;padding:17px 18px;transition:.2s ease;cursor:pointer}
+.pub-row:hover{border-color:#b8cec3;transform:translateY(-1px);box-shadow:0 10px 26px rgba(23,35,31,.06)}
+.pub-number{font:600 13px Arial,sans-serif;color:var(--sage);padding-top:2px}
+.pub-main h3{font:600 16px/1.35 Arial,sans-serif;margin:0 0 7px;color:var(--deep)}
+.pub-authors{font-size:12px;color:var(--ink);line-height:1.5}
+.pub-meta{font-size:11px;color:var(--muted);margin-top:7px}
+.pub-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.pub-tag{font-size:9px;text-transform:uppercase;letter-spacing:.07em;color:var(--green);background:var(--pale);border-radius:999px;padding:4px 7px}
+.pub-arrow{font-size:20px;color:#a0aaa5;align-self:center;transition:.2s}
+.pub-row:hover .pub-arrow{color:var(--green);transform:translateX(2px)}
+.empty-state{padding:60px;text-align:center;background:var(--paper);border:1px dashed var(--line);border-radius:15px;color:var(--muted)}
+.empty-state strong{color:var(--deep)}
+.timeline-section{margin-top:65px;padding:30px 0;border-top:1px solid var(--line)}
+.timeline-section h2{font:600 28px Arial,sans-serif;margin:7px 0}
+.timeline-section>p{font-size:13px;color:var(--muted);margin:0 0 24px}
+.timeline{display:flex;align-items:flex-end;gap:7px;overflow:auto;padding:10px 0 4px}
+.year-point{min-width:54px;text-align:center;cursor:pointer}
+.year-bar{height:var(--h);min-height:12px;background:var(--sage);border-radius:7px 7px 2px 2px;opacity:.72;transition:.2s}
+.year-point:hover .year-bar,.year-point.active .year-bar{opacity:1;background:var(--deep)}
+.year-label{font-size:10px;color:var(--muted);margin-top:7px}
+.year-count{font-size:9px;color:var(--green);margin-bottom:4px}
+.drawer-backdrop{position:fixed;inset:0;background:rgba(23,35,31,.24);z-index:40}
+.detail-drawer{position:fixed;right:0;top:0;height:100vh;width:min(680px,94vw);background:var(--paper);z-index:41;box-shadow:-20px 0 55px rgba(23,35,31,.16);padding:58px 42px 45px;overflow:auto;transform:translateX(100%);transition:transform .28s ease}
+.detail-drawer.open{transform:translateX(0)}
+.drawer-year{font:600 12px Arial,sans-serif;color:var(--sage);margin-bottom:8px}
+.drawer-title{font:600 30px/1.2 Arial,sans-serif;color:var(--deep);margin:0 0 18px;letter-spacing:-.02em}
+@media(max-width:1000px){
+  .pub-toolbar{align-items:stretch;flex-direction:column}
+  .toolbar-actions{width:100%}
+  .explorer{grid-template-columns:190px minmax(0,1fr)}
+  .pub-hero{align-items:start;flex-direction:column;gap:10px}
+}
+@media(max-width:760px){
+  .pub-hero h1{font-size:38px}
+  .explorer{display:block}
+  .side-panel{position:static;margin-bottom:10px;display:flex;gap:5px;overflow:auto;padding:8px}
+  .side-title,.side-heading{display:none}
+  .side-filter{width:auto;min-width:max-content;padding:8px 10px}
+  .results-top{padding:0}
+  .pub-row{grid-template-columns:38px 1fr;gap:10px;padding:14px}
+  .pub-arrow{display:none}
+  .pub-main h3{font-size:15px}
+  .detail-drawer{padding:52px 24px 35px}
+  .drawer-title{font-size:25px}
+  .hero-note{font-size:13px}
+}
+.detail-drawer .original-publication h4{font:600 23px/1.35 Arial,sans-serif;margin:0 0 16px;color:var(--deep)}
+.detail-drawer .original-publication p{font-size:14px;line-height:1.7;color:#3e4a45;margin:0 0 10px}
+.detail-drawer .original-publication a{color:var(--green);font-weight:600}
+.detail-drawer .original-publication .card{border:1px solid var(--line);border-radius:12px;background:var(--pale);padding:10px 14px;margin:12px 0}
+.detail-drawer .original-publication ul{padding-left:20px;color:#3e4a45}
+.thesis-section{margin-top:26px;padding:22px;background:var(--paper);border:1px solid var(--line);border-radius:15px}
+.thesis-section h3{font:600 20px Arial,sans-serif;color:var(--deep);margin:0 0 10px}
+.thesis-section p{font-size:13px;line-height:1.65;color:var(--muted)}
+.thesis-section a{color:var(--green);font-weight:600}
+.pub-main h3 a{color:inherit;text-decoration:none}
+.pub-main h3 a:hover{text-decoration:underline;text-underline-offset:3px}
+
+
+/* ---------- metrics for the current selection (year / area / search / latest 5) ---------- */
+.pub-metrics{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px 16px 16px;margin-bottom:18px;box-shadow:0 8px 25px rgba(23,35,31,.04)}
+.pub-metrics-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+.pub-metrics-title{font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--green)}
+.pub-metrics-label{font:600 15px Arial,sans-serif;color:var(--deep)}
+.metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) minmax(0,1.8fr);gap:8px}
+.metric{background:var(--pale);border-radius:12px;padding:11px 13px;min-width:0}
+.metric strong{display:block;font:600 24px/1.1 Arial,sans-serif;color:var(--deep)}
+.metric span{display:block;margin-top:4px;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.metric-wide strong{font-size:15px;line-height:1.35;padding-top:3px}
+@media(max-width:1000px){.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.metric-wide{grid-column:1/-1}}
+
+/* ---------- left panel: darker text and a clearer active state ---------- */
+.side-filter{color:#3e4a45;font-weight:500}
+.side-filter.active{font-weight:700;box-shadow:inset 3px 0 0 var(--green)}
+.side-heading{color:var(--green)}
+
+/* ---------- full record on the card (no side panel) ---------- */
+.pub-row { grid-template-columns: 58px 1fr; cursor: default; }
+.pub-extra { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 13px; line-height: 1.6; color: #3e4a45; }
+.pub-extra p { margin: 0 0 6px; }
+.pub-extra a { color: var(--green); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.pub-extra a:hover { color: var(--deep); }
+.pub-extra .px-5, .pub-extra .pb-4 { padding: 0; }
+.pub-extra .card { margin: 6px 0 4px; padding: 10px 14px; background: var(--pale); border: 0; border-radius: 10px; box-shadow: none; transform: none; }
+.pub-extra .card:hover { transform: none; box-shadow: none; }
+.pub-extra .card-body { padding: 0; font-size: 13px; }
+.pub-extra ul { margin: 4px 0 0; padding-left: 18px; }
+.pub-extra li { margin: 2px 0; }
+.pub-extra .badge { display: inline-block; padding: 3px 9px; border-radius: 999px; background: var(--mint); color: var(--deep); font-size: 11px; font-weight: 700; }
+/* research-area counts */
+.side-filter .side-count { color: var(--green); font-weight: 700; white-space: nowrap; }
+.side-filter.active .side-count { color: var(--deep); }

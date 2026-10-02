@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ASLab &mdash; Areejit Samal</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612+Mono|Cabin:400,700&display=swap">
   <link rel="stylesheet" href="css/main_style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/homepage-v2.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
-
-<body>
+<body class="homepage">
   <header>
     <nav class="navbar">
       <div class="nav-container">
         <h1 class="logo">ASLab</h1>
-
         <!-- Hamburger button (visible on mobile only) -->
-        <div class="hamburger">
-          &#9776; <!-- Unicode hamburger icon -->
-        </div>
-
+        <div class="hamburger" aria-label="Menu">&#9776;</div>
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="people.html">People</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="collaborators.html">Collaborators</a></li>
-
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">Resources</a>
             <ul class="dropdown-menu">
-              <li><a href="databases.html">Databases & Webservers</a></li>
+              <li><a href="databases.html">Databases &amp; Webservers</a></li>
               <li><a href="infrastructure.html">Computational Infrastructure</a></li>
               <li><a href="software.html">Software</a></li>
             </ul>
           </li>
-
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">More</a>
             <ul class="dropdown-menu">
@@ -44,111 +39,190 @@
               <li><a href="opportunities.html">Opportunities</a></li>
             </ul>
           </li>
-
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
-
   </header>
 
-  <section id="home" class="bio-section">
-    <br>
-    <div class="page-container">
-      <div class="panel-wrapper" style="margin:20px;">
+  <section id="home" class="bio-section hx">
+    <div class="hx-container">
 
-        <!-- LEFT PROFILE CARD -->
-        <div class="left-card">
-          <img src="images/Display_Picture/areejit_dp.jpg" class="profile-img" alt="Areejit Samal">
+      <!-- ============ 1. FIRST SCREEN ============ -->
+      <div class="hx-hero">
 
-          <h2>Areejit Samal</h2>
+        <div class="hx-hero-copy">
+          <p class="hx-eyebrow hx-reveal">ASLab &middot; Computational Biology &middot; IMSc Chennai</p>
 
-          <div class="social-links">
-            <a href="https://x.com/areejitsamal" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://scholar.google.co.in/citations?user=A_AH5JUAAAAJ&hl=en&oi=ao" target="_blank"
-              title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-            <a href="https://www.linkedin.com/in/areejit-samal-04a1234b/" target="_blank" title="LinkedIn"><i
-                class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.researchgate.net/profile/Areejit-Samal" target="_blank" title="ResearchGate"><i
-                class="fas fa-users"></i></a>
-            <a href="https://www.facebook.com/areejit.samal" target="_blank" title="Facebook"><i
-                class="fab fa-facebook-f"></i></a>
-            <a href="mailto:asamal@imsc.res.in" title="Email"><i class="fas fa-envelope"></i></a>
-          </div>
+          <h2 class="hx-title hx-reveal" style="--d:.08s">EXPLORING CHALLENGES IN LIFE & HEALTH SCIENCES THROUGH DATA & COMPUTATION</h2>
 
-          <h4>Research Areas</h4>
-          <div class="contact">
-            <a href="research.html">
-              <ul style="">
-                <li>Linking Exposome and One Health by Leveraging Computational Data Science</li>
-                <li>Compilation, Curation and Exploration of Natural Product Spaces</li>
-                <li>Geometry and Topology based methods for Network & Data Science</li>
-                <li>Boolean Modelling of Gene Regulatory Networks</li>
-                <li>Systems Modelling of Metabolism and Protein Secretion Systems</li>
-              </ul>
-            </a>
-          </div>
-
-
+          <p class="hx-lead hx-reveal" style="--d:.16s">
+            We study complex biological systems through the lens of computation, mathematics, and data.
+            Our work brings together large-scale biological data curation, network and systems modelling,
+            topology, and computational analysis to investigate questions ranging from environmental
+            exposures and One Health to natural products, gene regulation, metabolism, and microbial
+            systems. Across these diverse problems, we develop computational resources and mathematical
+            approaches that reveal patterns, mechanisms, and connections within biology.
+          </p>
         </div>
 
+        <aside class="hx-profile hx-reveal" style="--d:.2s">
+          <div class="hx-card">
+            <div class="hx-photo">
+              <img src="images/Display_Picture/areejit_dp.jpg" alt="Areejit Samal">
+            </div>
 
+            <div class="hx-card-body">
+              <p class="hx-role">LAB LEAD</p>
+              <h2 class="hx-name">Areejit Samal</h2>
 
-        <!-- RIGHT CONTENT -->
-        <div class="right-content">
+              <p class="hx-bio">
+                At present, I am <strong>Professor G</strong> in the
+                <strong>Computational Biology</strong> group at
+                The Institute of Mathematical Sciences (IMSc), Chennai, India.
+                IMSc is a constituent institution of the
+                Homi Bhabha National Institute (HBNI), Mumbai, India.
+              </p>
 
-          <!-- BIO CARD -->
-          <div class="content-card">
-            <p>
-              At present, I am <strong>Professor G</strong> in the
-              <strong>Computational Biology</strong> group at
-              The Institute of Mathematical Sciences (IMSc), Chennai, India.
-              IMSc is a constituent institution of the
-              Homi Bhabha National Institute (HBNI), Mumbai, India.
-            </p>
+              <div class="hx-social">
+                <a href="https://x.com/areejitsamal" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://scholar.google.co.in/citations?user=A_AH5JUAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://www.linkedin.com/in/areejit-samal-04a1234b/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.researchgate.net/profile/Areejit-Samal" target="_blank" rel="noopener" title="ResearchGate"><i class="fas fa-users"></i></a>
+                <a href="https://www.facebook.com/areejit.samal" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:asamal@imsc.res.in" title="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
           </div>
 
-          <!-- TRAJECTORY CARD -->
-          <div class="content-card">
-            <h4>My Trajectory</h4>
-            <img src="images/as_trajectory.jpg" class="map-img" alt="Trajectory Map">
-          </div>
-
-          <div class="content-card">
-            <p> I was born in Cuttack, Odisha, India and spent my first
-              7 years in a small industrial township Joda in Odisha.
-              With my parents, I then moved to <a href="https://en.wikipedia.org/wiki/Kodarma"
-                target="_blank">Kodarma</a> in Jharkhand (formerly
-              Bihar) for 2 years. In 1989, I moved to <a href="https://en.wikipedia.org/wiki/Delhi"
-                target="_blank">Delhi</a> with my parents and settled
-              there for next 20 years. In Delhi, I completed my
-              Schooling, Bachelors, Masters and PhD. In May 2008, I
-              moved to <a href="https://en.wikipedia.org/wiki/Leipzig" target="_blank">Leipzig</a>, Germany for my
-              Postdoctoral
-              work. In March 2010, I shifted my base to <a href="https://en.wikipedia.org/wiki/Orsay"
-                target="_blank">Orsay</a> (suburb of Paris). Between,
-              March 2010 and February 2012, I kept shuttling between
-              Paris and Leipzig. In February 2012, I moved to <a href="https://en.wikipedia.org/wiki/Seattle"
-                target="_blank">Seattle</a>, USA. In March 2013, I moved
-              to <a href="https://en.wikipedia.org/wiki/Trieste" target="_blank">Trieste</a>, Italy to continue my
-              research. I returned to India in 2014. </p>
-          </div>
-
-        </div>
-
+          <span class="hx-loc"><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+        </aside>
 
       </div>
+
+
+      <!-- ============ 2. THE RESEARCH LANDSCAPE ============ -->
+      <div class="hx-block" id="research-landscape">
+        <div class="hx-sec-head hx-reveal">
+          <h3 class="hx-h2">Research Areas</h3>
+        </div>
+
+        <ul class="hx-areas">
+          <li class="hx-reveal">
+            <a class="hx-area" href="research.html#research-1">
+              <span class="hx-num">01</span>
+              <span class="hx-area-text">Linking Exposome and One Health by Leveraging Computational Data Science</span>
+              <span class="hx-area-go" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li class="hx-reveal" style="--d:.06s">
+            <a class="hx-area" href="research.html#research-2">
+              <span class="hx-num">02</span>
+              <span class="hx-area-text">Compilation, Curation and Exploration of Natural Product Spaces</span>
+              <span class="hx-area-go" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li class="hx-reveal" style="--d:.12s">
+            <a class="hx-area" href="research.html#research-3">
+              <span class="hx-num">03</span>
+              <span class="hx-area-text">Geometry and Topology based methods for Network &amp; Data Science</span>
+              <span class="hx-area-go" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li class="hx-reveal">
+            <a class="hx-area" href="research.html#research-4">
+              <span class="hx-num">04</span>
+              <span class="hx-area-text">Boolean Modelling of Gene Regulatory Networks</span>
+              <span class="hx-area-go" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li class="hx-reveal" style="--d:.06s">
+            <a class="hx-area" href="research.html#research-5">
+              <span class="hx-num">05</span>
+              <span class="hx-area-text">Systems Modelling of Metabolism and Protein Secretion Systems</span>
+              <span class="hx-area-go" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- ============ 3. MY TRAJECTORY (click to open) ============ -->
+      <div class="hx-block" id="trajectory">
+        <div class="hx-reveal">
+          <button type="button" class="hx-traj-card" aria-expanded="false" aria-controls="hx-traj-panel">
+            <span class="hx-traj-title">MY TRAJECTORY</span>
+            <span class="hx-eyebrow">From Cuttack, Odisha to Chennai, India</span>
+            <span class="hx-traj-icon" aria-hidden="true">&#8599;</span>
+            
+            <span class="hx-traj-cta">Explore my journey <i>&rarr;</i></span>
+          </button>
+        </div>
+
+        <div class="hx-collapse" id="hx-traj-panel">
+          <div class="hx-collapse-inner">
+            <div class="hx-panel">
+
+              <img src="images/as_trajectory.jpg" class="hx-map" alt="Trajectory Map">
+
+              <ol class="hx-timeline">
+                <li class="hx-stop" style="--i:0"><strong>Cuttack</strong><span>Born</span></li>
+                <li class="hx-stop" style="--i:1"><strong>Kodarma</strong><span>2 years</span></li>
+                <li class="hx-stop" style="--i:2"><strong>Delhi</strong><span>1989</span></li>
+                <li class="hx-stop" style="--i:3"><strong>Leipzig</strong><span>May 2008</span></li>
+                <li class="hx-stop" style="--i:4"><strong>Orsay</strong><span>March 2010</span></li>
+                <li class="hx-stop" style="--i:5"><strong>Seattle</strong><span>February 2012</span></li>
+                <li class="hx-stop" style="--i:6"><strong>Trieste</strong><span>March 2013</span></li>
+                <li class="hx-stop" style="--i:7"><strong>India</strong><span>2014</span></li>
+              </ol>
+
+              <p class="hx-story">
+                I was born in Cuttack, Odisha, India and spent my first
+                7 years in a small industrial township Joda in Odisha.
+                With my parents, I then moved to <a href="https://en.wikipedia.org/wiki/Kodarma" target="_blank" rel="noopener">Kodarma</a> in Jharkhand (formerly
+                Bihar) for 2 years. In 1989, I moved to <a href="https://en.wikipedia.org/wiki/Delhi" target="_blank" rel="noopener">Delhi</a> with my parents and settled
+                there for next 20 years. In Delhi, I completed my
+                Schooling, Bachelors, Masters and PhD. In May 2008, I
+                moved to <a href="https://en.wikipedia.org/wiki/Leipzig" target="_blank" rel="noopener">Leipzig</a>, Germany for my Postdoctoral
+                work. In March 2010, I shifted my base to <a href="https://en.wikipedia.org/wiki/Orsay" target="_blank" rel="noopener">Orsay</a> (suburb of Paris). Between,
+                March 2010 and February 2012, I kept shuttling between
+                Paris and Leipzig. In February 2012, I moved to <a href="https://en.wikipedia.org/wiki/Seattle" target="_blank" rel="noopener">Seattle</a>, USA. In March 2013, I moved
+                to <a href="https://en.wikipedia.org/wiki/Trieste" target="_blank" rel="noopener">Trieste</a>, Italy to continue my
+                research. I returned to India in 2014.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <section id="news" class="news-section">
     <div class="container">
 
       <section class="new-section">
-        <h2 class="news-title">News</h2>
+        <h2 class="news-title">Recent News</h2>
+
+        <div class="hx-chip-bar">
+          <div class="hx-chip-row" role="tablist" aria-label="Filter news by type">
+            <button type="button" class="hx-chip is-active" data-filter="all" role="tab" aria-selected="true">All <span class="hx-count">(31)</span></button>
+            <button type="button" class="hx-chip" data-filter="award" role="tab" aria-selected="false">Awards <span class="hx-count">(14)</span></button>
+            <button type="button" class="hx-chip" data-filter="media" role="tab" aria-selected="false">Media <span class="hx-count">(15)</span></button>
+            <button type="button" class="hx-chip" data-filter="paper" role="tab" aria-selected="false">Paper talks <span class="hx-count">(1)</span></button>
+            <button type="button" class="hx-chip" data-filter="policy" role="tab" aria-selected="false">Policy <span class="hx-count">(1)</span></button>
+          </div>
+          <span class="hx-news-status" id="hxNewsStatus" aria-live="polite"></span>
+          <div class="hx-chip-nav">
+            <button type="button" class="hx-chip-arrow hx-chip-arrow-left" aria-label="Scroll news left">&#8592;</button>
+            <button type="button" class="hx-chip-arrow hx-chip-arrow-right" aria-label="Scroll news right">&#8594;</button>
+          </div>
+        </div>
 
         <div class="news-container">
 
-            <div class="news-card" tabindex="0">
+            <div class="news-card" data-filter="award" tabindex="0">
 
               <h3 class="card-headline">Best Project Award to Jaisubasri Karthikeyan at PSG Tech</h3>
               <p class="card-description">Jaisubasri Karthikeyan was awarded Best Project Award at the PSG Tech Alumni Association Annual General Body Meeting 2026, Coimbatore, for the co-first-authored publication <i>"Benchmarking Artificial Intelligence Models for Predicting Nuclear Receptor Activity from Tox21 Assays"</i>, based on research conducted at IMSc, Chennai.</p>
@@ -156,7 +230,7 @@
               <p class="card-date">July 2, 2026</p>
             </div>
 
-            <div class="news-card" tabindex="0">
+            <div class="news-card" data-filter="media" tabindex="0">
             <a href="https://www.thehindubusinessline.com/business-tech/how-do-natural-polypills-work/article70706077.ece"
               target="_blank" class="no-underline">
               <h3 class="card-headline">How do ‘natural polypills’ work?</h3>
@@ -169,7 +243,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">Best Poster Award to Shreyes Rajan Madgaonkar at WOSC-2026</h3>
             <p class="card-subtext">CSIR-NIO, Goa, India</p>
@@ -181,7 +255,7 @@
 
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="paper" tabindex="0">
 
             <a href="https://podcasts.apple.com/us/podcast/482-mapping-brain-connectivity-changes/id1827948841?i=1000748667348"
               target="_blank" class="no-underline">
@@ -199,7 +273,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
 
             <a href="https://www.nature.com/articles/d44151-026-00013-z" target="_blank" class="no-underline">
               <h3 class="card-headline">How the brain's wiring changes
@@ -213,7 +287,7 @@
             <p class="card-date">January 22, 2026</p>
           </div>
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
 
             <a href="https://www.mis.mpg.de/news/press-releases/mathematics-reveals-brain-changes" target="_blank"
               class="no-underline">
@@ -229,7 +303,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
 
             <a href="https://www.nature.com/articles/d44151-025-00207-x" target="_blank" class="no-underline">
               <h3 class="card-headline">Microplastics laden with toxins and pathogens fill India’s marketplace air
@@ -245,7 +319,7 @@
 
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">HBNI Outstanding Doctoral Student Award 2025 in Life Sciences to Ajaya Kumar Sahoo
             </h3>
@@ -256,7 +330,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
 
             <a href="https://www.imsc.res.in/outreach/scicomm/2025/may/research-highlights/uv-exposome/" target="_blank"
               class="no-underline">
@@ -270,7 +344,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
 
             <a href="https://timesofindia.indiatimes.com/city/chennai/oil-spills-and-industrial-waste-in-rivers-and-coasts-put-marine-life-and-human-health-at-risk/articleshow/121195527.cms"
               target="_blank" class="no-underline">
@@ -282,7 +356,7 @@
             <p class="card-date">May, 2025</p>
             </a>
           </div>
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
 
             <a href="https://www.imsc.res.in/outreach/scicomm/2025/march/research-highlights/phc-ecotoxicology/"
               target="_blank" class="no-underline">
@@ -293,7 +367,7 @@
             <span class="card-badge">MEDIA COVERAGE</span>
             <p class="card-date">March, 2025</p>
           </div>
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">Flash Talk Award to Priyotosh Sil at 47th Indian Biophysical Society Meeting</h3>
             <p class="card-description">Priyotosh Sil received a Flash Talk award of ₹5,000 at IBS 2025 hosted by IIT
@@ -301,7 +375,7 @@
             <span class="card-badge">AWARD</span>
             <p class="card-date">March 9, 2025</p>
           </div>
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">Best Poster Award to Shreyes Rajan Madgaonkar at MPRISM 2025</h3>
             <p class="card-subtext">IISER Kolkata, India</p>
@@ -311,7 +385,7 @@
             <span class="card-badge">AWARD</span>
             <p class="card-date">February 16, 2025</p>
           </div>
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
 
             <a href="https://www.nature.com/articles/d44151-025-00004-6" target="_blank" class="no-underline">
               <h3 class="card-headline">Using maths to identify health risks from plastics</h3>
@@ -324,7 +398,7 @@
             <p class="card-date">January, 2025</p>
           </div>
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">Travel Award to Priyotosh Sil at European Conference on Mathematical and
               Theoretical Biology</h3>
@@ -335,7 +409,7 @@
             <p class="card-date">July 26, 2024</p>
           </div>
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">Raman-Charpak Fellowship to Priyotosh Sil at IFCPAR/CEFIPRA</h3>
             <p class="card-subtext">Université Paris-Saclay, France</p>
@@ -345,7 +419,7 @@
             <p class="card-date">May, 2024</p>
           </div>
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">Best Poster Award to Shanmuga Priya B at ICB-HFS 2024</h3>
             <p class="card-subtext">Pondicherry University, India</p>
@@ -356,7 +430,7 @@
             <p class="card-date">February 16, 2024</p>
           </div>
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">Best Poster Award to Nikhil Chivukula at AIBC 2024</h3>
             <p class="card-subtext">Faridabad, India</p>
@@ -366,7 +440,7 @@
             <p class="card-date">March 8, 2024</p>
           </div>
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">HBNI Outstanding Doctoral Student Award 2023 in Life Sciences to Janani R</h3>
 
@@ -376,7 +450,7 @@
             <p class="card-date">June 3, 2023</p>
           </div>
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">Best Poster Award to Yasharth Yadav at CNSD-2022</h3>
             <p class="card-subtext">IISER Pune, India</p>
@@ -387,7 +461,7 @@
             <p class="card-date">December 18, 2022</p>
           </div>
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
 
             <a href="https://www.thehindu.com/sci-tech/medicinal-fungi-may-be-suitable-for-identifying-novel-drugs/article65955552.ece"
               target="_blank">
@@ -401,7 +475,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">Best Poster Award to Ajaya Kumar Sahoo at HBNI Theme Meeting on Life Sciences</h3>
             <p class="card-description">Ajaya Kumar Sahoo was awarded the Best Poster Prize at the HBNI Theme Meeting on
@@ -411,7 +485,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
 
             <a href="https://shaastramag.iitm.ac.in/news-brief/nature-likes-it-simple" target="_blank">
               <h3 class="card-headline">A new study underlines biology's preference for minimal complexity</h3>
@@ -425,7 +499,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="policy" tabindex="0">
 
             <a href="https://www.anses.fr/en/system/files/REACH2019SA0179Ra-1.pdf" target="_blank">
               <h3 class="card-headline">ANSES relies on DEDuCT to establish a list of endocrine disruptors</h3>
@@ -442,7 +516,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
             <a href="https://chemicalwatch.com/187252/indian-team-expands-database-of-potential-endocrine-disrupting-chemicals"
               target="_blank">
               <h3 class="card-headline">Indian team expands database of potenial endocrine disrupting chemicals</h3>
@@ -458,7 +532,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <a href="https://www.scienceindiafest.org" target="_blank">
               <h3 class="card-headline">Poster Prize to B.S. Karthikeyan at India International Science Festival (IISF)
@@ -475,7 +549,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="award" tabindex="0">
 
             <h3 class="card-headline">Best Poster Prize to B.S. Karthikeyan at Society of Biological Chemists (SBCI)
               2019</h3>
@@ -489,7 +563,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
 
             <a href="https://cen.acs.org/environment/endocrine-disruptors/Database-endocrine-disruptors-focuses-experimental/97/web/2019/08"
               target="_blank">
@@ -506,7 +580,7 @@
 
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
             <a href="https://chemicalwatch.com/80362/indian-team-identifies-hundreds-of-potential-edcs-from-literature"
               target="_blank">
               <h3 class="card-headline">Indian team identifies hundreds of potential EDCs</h3>
@@ -520,7 +594,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
             <a href="https://vigyanprasar.gov.in/isw/Indian-scientists-develop-database-of-everyday-chemicals-harmful-to-human-health.html"
               target="_blank">
               <h3 class="card-headline">Indian scientists develop database of everyday harmful to human health</h3>
@@ -535,7 +609,7 @@
           </div>
 
 
-          <div class="news-card" tabindex="0">
+          <div class="news-card" data-filter="media" tabindex="0">
 
             <a href="https://www.hindustantimes.com/mumbai-news/now-a-database-of-harmful-chemicals-in-everyday-items/story-yKJJ1oMvZQ84DS5rjzkdrM.html"
               target="_blank">
@@ -553,10 +627,9 @@
 
         </div>
     </div>
+        </div>
   </section>
   </section>
-
-
 
   <footer class="footer">
     <div class="container">
@@ -564,34 +637,7 @@
       <p>Copyright © 2026 ASLab - All rights reserved</p>
     </div>
   </footer>
-
-  <script src="js/main_script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const hamburger = document.querySelector('.hamburger');
-      const navMenu = document.querySelector('.nav-menu');
-
-      // Toggle mobile menu
-      hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-      });
-
-      // Toggle mobile dropdowns
-      const dropdowns = document.querySelectorAll('.dropdown');
-
-      dropdowns.forEach(drop => {
-        const toggle = drop.querySelector('.dropdown-toggle');
-
-        toggle.addEventListener('click', (e) => {
-          e.preventDefault();             // prevent default link
-          drop.classList.toggle('active'); // show/hide submenu
-        });
-      });
-    });
-
-
-
-  </script>
+  <script src="js/site.js"></script>
+  <script src="js/index.js"></script>
 </body>
-
 </html>
