@@ -8,6 +8,16 @@
   <link rel="stylesheet" href="css/main_style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="css/homepage-v2.css">
+  <style>
+    .hx-bio strong,
+    .hx-bio a,
+    .hx-bio a:link,
+    .hx-bio a:visited,
+    .hx-bio a:hover,
+    .hx-bio a:active { color: #568471; }
+    .hx-bio a { text-decoration: none; }
+    .hx-bio a:hover { text-decoration: underline; }
+  </style>
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="homepage">
@@ -78,10 +88,10 @@
 
               <p class="hx-bio">
                 At present, I am <strong>Professor G</strong> in the
-                <strong>Computational Biology</strong> group at
-                The Institute of Mathematical Sciences (IMSc), Chennai, India.
+                <a href="https://www.imsc.res.in/computational_biology" target="_blank" rel="noopener"><strong>Computational Biology</strong></a> group at
+                <a href="https://www.imsc.res.in/" target="_blank" rel="noopener">The Institute of Mathematical Sciences (IMSc), Chennai, India</a>.
                 IMSc is a constituent institution of the
-                Homi Bhabha National Institute (HBNI), Mumbai, India.
+                <a href="http://www.hbni.ac.in/" target="_blank" rel="noopener">Homi Bhabha National Institute (HBNI), Mumbai, India</a>.
               </p>
 
               <div class="hx-social">
@@ -207,9 +217,9 @@
 
         <div class="hx-chip-bar">
           <div class="hx-chip-row" role="tablist" aria-label="Filter news by type">
-            <button type="button" class="hx-chip is-active" data-filter="all" role="tab" aria-selected="true">All <span class="hx-count">(31)</span></button>
-            <button type="button" class="hx-chip" data-filter="award" role="tab" aria-selected="false">Awards <span class="hx-count">(14)</span></button>
-            <button type="button" class="hx-chip" data-filter="media" role="tab" aria-selected="false">Media <span class="hx-count">(15)</span></button>
+            <button type="button" class="hx-chip is-active" data-filter="all" role="tab" aria-selected="true">All <span class="hx-count">(36)</span></button>
+            <button type="button" class="hx-chip" data-filter="award" role="tab" aria-selected="false">Awards <span class="hx-count">(15)</span></button>
+            <button type="button" class="hx-chip" data-filter="media" role="tab" aria-selected="false">Media <span class="hx-count">(19)</span></button>
             <button type="button" class="hx-chip" data-filter="paper" role="tab" aria-selected="false">Paper talks <span class="hx-count">(1)</span></button>
             <button type="button" class="hx-chip" data-filter="policy" role="tab" aria-selected="false">Policy <span class="hx-count">(1)</span></button>
           </div>
@@ -221,6 +231,62 @@
         </div>
 
         <div class="news-container">
+
+            <div class="news-card" data-filter="media" tabindex="0">
+            <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7511142952979709952/"
+              target="_blank" class="no-underline">
+              <h3 class="card-headline">Cell Reports Sustainability Q&A</h3>
+            </a>
+            </h3>
+            <p class="card-description">Shreyes Madgaonkar, along with our collaborator from NCCR, Chennai, Krishna Venkatarama Sharma, participated in a Q&A for Cell Reports Sustainability discussing our recently published work on chemicals used in aquaculture.</p>
+            <span class="card-badge">MEDIA COVERAGE</span>
+            <p class="card-date">October 2, 2026</p>
+          </div>
+
+            <div class="news-card" data-filter="media" tabindex="0">
+            <a href="https://timesofindia.indiatimes.com/city/chennai/researchers-develop-database-to-track-aquaculture-chemicals-in-chennai/articleshow/134358290.cms"
+              target="_blank" class="no-underline">
+              <h3 class="card-headline">Researchers develop database to track aquaculture chemicals in Chennai</h3>
+            </a>
+            <p class="card-subtext">By  U Tejonmayam in The Times of India</p>
+            </h3>
+            <p class="card-description">ReCAnt (Resource on Chemicals used in Aquaculture and their Ecotoxicity), developed at the Institute of Mathematical Sciences (IMSc), in collaboration with the National Centre for Coastal Research (NCR), brings together information on 690 chemicals reported in aquaculture.</p>
+            <span class="card-badge">MEDIA COVERAGE</span>
+            <p class="card-date">September 19, 2026</p>
+          </div>
+          
+          <div class="news-card" data-filter="award" tabindex="0">
+
+            <h3 class="card-headline">First Prize for Oral Presentation to Nikhil Chivukula at IndiBioCom-2026</h3>
+            <p class="card-subtext">SRM Institute of Science and Technology, Tamil Nadu, India</p>
+            <p class="card-description">First Prize for Oral Presentation at the Indian Conference on Bioinformatics and Computaional Biology (IndiBioCom) - 2026, SRM Institute of Science and Technology.</p>
+            <span class="card-badge">AWARD</span>
+            <p class="card-date">September 9, 2026</p>
+          </div>
+
+            <div class="news-card" data-filter="media" tabindex="0">
+            <a href="https://www.nature.com/articles/d44151-026-00160-3"
+              target="_blank" class="no-underline">
+              <h3 class="card-headline">Fish farms use way more chemicals than regulators have on their radar</h3>
+            </a>
+            <p class="card-subtext">By Sahana Ghosh in Nature India</p>
+            </h3>
+            <p class="card-description">A new database finds agencies document only a fraction of the chemicals used in aquaculture globally.</p>
+            <span class="card-badge">MEDIA COVERAGE</span>
+            <p class="card-date">August 18, 2026</p>
+          </div>
+
+            <div class="news-card" data-filter="media" tabindex="0">
+            <a href="https://www.nature.com/articles/d44151-026-00160-3"
+              target="_blank" class="no-underline">
+              <h3 class="card-headline">Something fishy in water bodies</h3>
+            </a>
+            <p class="card-subtext">By Manupriya in IIT Madras Shaastra</p>
+            </h3>
+            <p class="card-description">A new study, published in Cell Reports Sustainability, describes a database that compiles 690 such chemicals used globally. Called ReCAnt (Resource on Chemicals used in Aquaculture and their Ecotoxicity), the database was developed by The Institute of Mathematical Sciences (IMSc) and the National Centre for Coastal Research, both based in Chennai.</p>
+            <span class="card-badge">MEDIA COVERAGE</span>
+            <p class="card-date">August 17, 2026</p>
+          </div>
 
             <div class="news-card" data-filter="award" tabindex="0">
 
@@ -294,7 +360,7 @@
               <h3 class="card-headline">Mathematics Reveals Brain Changes
               </h3>
             </a>
-            <p class="card-subtext">By Jana Gregor in Max Planck Socity News</p>
+            <p class="card-subtext">By Jana Gregor in Max Planck Society News</p>
             </h3>
             <p class="card-description">Introduces a novel mathematical approach that enables identification of specific
               brain regions whose connectivity shifts with age or differs in autism spectrum disorder (ASD).</p>
