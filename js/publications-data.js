@@ -16,7 +16,6 @@ const publications = [
     '<p><strong>Authors:</strong> R. Tiwari, M. Balaji, N. Chivukula, P. Sil, <strong>A. Samal*</strong></p>\n' +
     '<p><strong>Year:</strong> 2026</p>\n' +
     '<p><strong>Journal:</strong> Biogerontology, 27, 173 (2026)</p>\n' +
-    '<p><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10522-026-10520-2" target="_blank">10.1007/s10522-026-10520-2</a></p>\n' +
     '<p><a href="https://github.com/asamallab/AgingHallmarksDB" target="_blank">GitHub Repository</a></p>\n' +
     '<p><a href="https://cb.imsc.res.in/aginghallmarksdb/" target="_blank">Link to AgingHallmarksDB</a></p>\n' +
     '<p><strong>Research Area:</strong> Others</p>'
