@@ -1,6 +1,5 @@
 /* ASLab Publications — original publication records and PhD thesis (unchanged from the supplied file). */
 const publications = [
-  
 {
   year: 2026,
   title:
@@ -50,11 +49,21 @@ const publications = [
     title:
       "An integrated resource for systems-level analysis of aging hallmarks and associated genes",
     authors: "R. Tiwari, M. Balaji, N. Chivukula, P. Sil, A. Samal*",
-    journal: "bioRxiv 2026.05.29.728838",
+    journal: "Biogerontology, 27, 173 (2026)",
     area: "Others",
-    href: "https://www.biorxiv.org/content/10.64898/2026.05.29.728838v1",
-    status: "Submitted",
-    html: '<h4>\n<a href="https://www.biorxiv.org/content/10.64898/2026.05.29.728838v1" target="_blank">\n              An integrated resource for systems-level analysis of aging hallmarks and associated genes\n            </a>\n</h4>\n<p><strong>Authors:</strong> R. Tiwari, M. Balaji, N. Chivukula, P. Sil, <strong>A. Samal*</strong></p>\n<p><strong>Year:</strong> 2026</p>\n<p><strong>Preprint:</strong> bioRxiv 2026.05.29.728838</p>\n<p>\n<a href="https://github.com/asamallab/AgingHallmarksDB" target="_blank">\n              GitHub Repository</a></p>\n<p><a href="https://cb.imsc.res.in/aginghallmarksdb/" target="_blank">Link to AgingHallmarksDB</a></p>\n<p><strong>Research Area:</strong> Others</p>',
+    href: "https://link.springer.com/article/10.1007/s10522-026-10520-2",
+    status: "Published",
+    html: '<h4>\n' +
+    '<a href="https://link.springer.com/article/10.1007/s10522-026-10520-2" target="_blank">\n' +
+    'An integrated resource for systems-level analysis of aging hallmarks and associated genes\n' +
+    '</a>\n</h4>\n' +
+    '<p><strong>Authors:</strong> R. Tiwari, M. Balaji, N. Chivukula, P. Sil, <strong>A. Samal*</strong></p>\n' +
+    '<p><strong>Year:</strong> 2026</p>\n' +
+    '<p><strong>Journal:</strong> Biogerontology, 27, 173 (2026)</p>\n' +
+    '<p><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10522-026-10520-2" target="_blank">10.1007/s10522-026-10520-2</a></p>\n' +
+    '<p><a href="https://github.com/asamallab/AgingHallmarksDB" target="_blank">GitHub Repository</a></p>\n' +
+    '<p><a href="https://cb.imsc.res.in/aginghallmarksdb/" target="_blank">Link to AgingHallmarksDB</a></p>\n' +
+    '<p><strong>Research Area:</strong> Others</p>'
   },
   {
     year: 2026,
