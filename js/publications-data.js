@@ -1,6 +1,27 @@
 /* ASLab Publications — original publication records and PhD thesis (unchanged from the supplied file). */
 const publications = [
-  {
+  
+{
+  year: 2026,
+  title:
+    "IMPPAT 3.0: An updated FAIR database of phytochemicals and formulations of Indian Medicinal plants",
+  authors:
+    "S.P. Baskaran, A.K. Sahoo, P. Sil, R. Tiwari, N. Chivukula, S.E. Eapen, G. Ranganathan, P. Semwal, A. Samal*",
+  journal: "arXiv:2610.07478",
+  area: "Natural Product Spaces",
+  href: "https://arxiv.org/abs/2610.07478",
+  status: "Submitted",
+  html: '<h4>\n' +
+    '<a href="https://arxiv.org/abs/2610.07478" target="_blank">\n' +
+    'IMPPAT 3.0: An updated FAIR database of phytochemicals and formulations of Indian Medicinal plants\n' +
+    '</a>\n</h4>\n' +
+    '<p><strong>Authors:</strong> S.P. Baskaran, A.K. Sahoo, P. Sil, R. Tiwari, N. Chivukula, S.E. Eapen, G. Ranganathan, P. Semwal, <strong>A. Samal*</strong></p>\n' +
+    '<p><strong>Year:</strong> 2026</p>\n' +
+    '<p><strong>Preprint:</strong> arXiv:2610.07478</p>\n' +
+    '<p><a href="https://cb.imsc.res.in/imppat/" target="_blank">Link to IMPPAT</a></p>\n' +
+    '<p><strong>Research Area:</strong> Natural Product Spaces</p>'
+},
+{
     year: 2026,
     title:
       "NANHA - Neurostimulation in Atypical Neurodevelopment: a Harmonized Atlas",
