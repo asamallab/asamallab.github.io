@@ -1,26 +1,6 @@
 /* ASLab Publications — original publication records and PhD thesis (unchanged from the supplied file). */
 const publications = [
 {
-    year: 2026,
-    title:
-      "An integrated resource for systems-level analysis of aging hallmarks and associated genes",
-    authors: "R. Tiwari, M. Balaji, N. Chivukula, P. Sil, A. Samal*",
-    journal: "Biogerontology, 27, 173 (2026)",
-    area: "Others",
-    href: "https://link.springer.com/article/10.1007/s10522-026-10520-2",
-    status: "Published",
-    html: '<h4>\n' +
-    '<a href="https://link.springer.com/article/10.1007/s10522-026-10520-2" target="_blank">\n' +
-    'An integrated resource for systems-level analysis of aging hallmarks and associated genes\n' +
-    '</a>\n</h4>\n' +
-    '<p><strong>Authors:</strong> R. Tiwari, M. Balaji, N. Chivukula, P. Sil, <strong>A. Samal*</strong></p>\n' +
-    '<p><strong>Year:</strong> 2026</p>\n' +
-    '<p><strong>Journal:</strong> Biogerontology, 27, 173 (2026)</p>\n' +
-    '<p><a href="https://github.com/asamallab/AgingHallmarksDB" target="_blank">GitHub Repository</a></p>\n' +
-    '<p><a href="https://cb.imsc.res.in/aginghallmarksdb/" target="_blank">Link to AgingHallmarksDB</a></p>\n' +
-    '<p><strong>Research Area:</strong> Others</p>'
-},
-{
   year: 2026,
   title:
     "IMPPAT 3.0: An updated FAIR database of phytochemicals and formulations of Indian Medicinal plants",
@@ -75,8 +55,40 @@ const publications = [
     href: "https://doi.org/10.21203/rs.3.rs-9278930/v1",
     status: "Submitted",
     html: '<h4>\n<a href="https://doi.org/10.21203/rs.3.rs-9278930/v1" target="_blank">\n              TAS2R38 Polymorphism and Bitter Taste Perception: Implications for Satmaya and Upashaya-Anupshaya Beyond Prakriti\n            </a>\n</h4>\n<p><strong>Authors:</strong> S. Sharma#, O.A. Sonawane#, R. Jain, A. Sharma, D. Jangir, V. Garisetti, S.P. Baskaran, K. Shreedharala,\n            K.R. Das, <strong>A. Samal</strong>, S.R. Thrigulla, N.R. Kochar, M. Yadav, D.C. Sharma, S. Chhipa, M. Mukerji*</p>\n<p><strong>Year:</strong> 2026</p>\n<p><strong>Preprint:</strong> Research Square rs.3.rs-9278930</p>\n<p><strong>Research Area:</strong> Natural Product Spaces</p>',
-  },
-  {
+},
+{
+  year: 2026,
+  title:
+    "An integrated resource for systems-level analysis of aging hallmarks and associated genes",
+  authors:
+    "R. Tiwari, M. Balaji, N. Chivukula, P. Sil, A. Samal*",
+  journal: "Biogerontology, 27, 173 (2026)",
+  area: "Others",
+  href: "https://link.springer.com/article/10.1007/s10522-026-10520-2",
+  status: "Published",
+  html: '<h4>\n' +
+    '<a href="https://link.springer.com/article/10.1007/s10522-026-10520-2" target="_blank">\n' +
+    'An integrated resource for systems-level analysis of aging hallmarks and associated genes\n' +
+    '</a>\n</h4>\n' +
+    '<p><strong>Authors:</strong> R. Tiwari, M. Balaji, N. Chivukula, P. Sil, <strong>A. Samal*</strong></p>\n' +
+    '<p><strong>Year:</strong> 2026</p>\n' +
+    '<p><strong>Journal:</strong> Biogerontology, 27, 173 (2026)</p>\n' +
+    '<p><a href="https://github.com/asamallab/AgingHallmarksDB" target="_blank">GitHub Repository</a></p>\n' +
+    '<p><a href="https://cb.imsc.res.in/aginghallmarksdb/" target="_blank">Link to AgingHallmarksDB</a></p>\n' +
+    '<div class="px-5 pb-4">\n' +
+    '<div class="card">\n' +
+    '<div class="card-body">\n' +
+    '<p><strong>Media Coverage in:</strong></p>\n' +
+    '<ul>\n' +
+    '<li>Scienmag: <a href="https://scienmag.com/new-database-maps-3111-genes-across-the-11-hallmarks-of-aging/" target="_blank">New Database Maps 3,111 Genes Across the 11 Hallmarks of Aging</a></li>\n' +
+    '<li>Bioengineer.org: <a href="https://bioengineer.org/new-database-maps-3111-genes-across-the-11-hallmarks-of-aging/" target="_blank">New Database Maps 3,111 Genes Across the 11 Hallmarks of Aging</a></li>\n' +
+    '</ul>\n' +
+    '</div>\n' +
+    '</div>\n' +
+    '</div>\n' +
+    '<p><strong>Research Area:</strong> Others</p>'
+},
+{
     year: 2025,
     title:
       "DEDuCT 3.0: An enhanced and expanded FAIR-compliant resource and\n              toxicology knowledge graph for endocrine disrupting chemicals",
