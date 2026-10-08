@@ -45,6 +45,18 @@ const publications = [
     html: '<h4>\n<a href="https://www.biorxiv.org/content/10.64898/2026.06.22.733803" target="_blank">\n              TickMapKB: A FAIR Spatial Knowledgebase of Tick Species and Associated Pathogens in India\n            </a>\n</h4>\n<p><strong>Authors:</strong> S.R. Madgaonkar, S. Vashishth, E. Ayyanar, S. Srirama, <strong>A.\n              Samal*</strong></p>\n<p><strong>Year:</strong> 2026</p>\n<p><strong>Preprint:</strong> bioRxiv 2026.06.22.733803</p>\n<p>\n<a href="https://cb.imsc.res.in/tickmapkb/" target="_blank">Link to\n              TickMapKB</a>\n</p>\n<p><strong>Research Area:</strong> Others</p>',
 },
 {
+    year: 2026,
+    title:
+      "TAS2R38 Polymorphism and Bitter Taste Perception: Implications for Satmaya and Upashaya-Anupshaya Beyond Prakriti",
+    authors:
+      "S. Sharma#, O.A. Sonawane#, R. Jain, A. Sharma, D. Jangir, V. Garisetti, S.P. Baskaran, K. Shreedharala,\n            K.R. Das, A. Samal , S.R. Thrigulla, N.R. Kochar, M. Yadav, D.C. Sharma, S. Chhipa, M. Mukerji*",
+    journal: "Research Square rs.3.rs-9278930",
+    area: "Natural Product Spaces",
+    href: "https://doi.org/10.21203/rs.3.rs-9278930/v1",
+    status: "Submitted",
+    html: '<h4>\n<a href="https://doi.org/10.21203/rs.3.rs-9278930/v1" target="_blank">\n              TAS2R38 Polymorphism and Bitter Taste Perception: Implications for Satmaya and Upashaya-Anupshaya Beyond Prakriti\n            </a>\n</h4>\n<p><strong>Authors:</strong> S. Sharma#, O.A. Sonawane#, R. Jain, A. Sharma, D. Jangir, V. Garisetti, S.P. Baskaran, K. Shreedharala,\n            K.R. Das, <strong>A. Samal</strong>, S.R. Thrigulla, N.R. Kochar, M. Yadav, D.C. Sharma, S. Chhipa, M. Mukerji*</p>\n<p><strong>Year:</strong> 2026</p>\n<p><strong>Preprint:</strong> Research Square rs.3.rs-9278930</p>\n<p><strong>Research Area:</strong> Natural Product Spaces</p>',
+},
+{
   year: 2026,
   title:
     "DEDuCT 3.0: An enhanced and expanded FAIR-compliant resource and toxicology knowledge graph for endocrine disrupting chemicals",
@@ -84,18 +96,6 @@ const publications = [
     '<p><strong>Preprint:</strong> bioRxiv 2025.08.02.668261</p>\n' +
     '<p><a href="https://cb.imsc.res.in/tictok/" target="_blank">Link to TICToK</a></p>\n' +
     '<p><strong>Research Area:</strong> Exposomics / Systems Toxicology</p>'
-},
-{
-    year: 2026,
-    title:
-      "TAS2R38 Polymorphism and Bitter Taste Perception: Implications for Satmaya and Upashaya-Anupshaya Beyond Prakriti",
-    authors:
-      "S. Sharma#, O.A. Sonawane#, R. Jain, A. Sharma, D. Jangir, V. Garisetti, S.P. Baskaran, K. Shreedharala,\n            K.R. Das, A. Samal , S.R. Thrigulla, N.R. Kochar, M. Yadav, D.C. Sharma, S. Chhipa, M. Mukerji*",
-    journal: "Research Square rs.3.rs-9278930",
-    area: "Natural Product Spaces",
-    href: "https://doi.org/10.21203/rs.3.rs-9278930/v1",
-    status: "Submitted",
-    html: '<h4>\n<a href="https://doi.org/10.21203/rs.3.rs-9278930/v1" target="_blank">\n              TAS2R38 Polymorphism and Bitter Taste Perception: Implications for Satmaya and Upashaya-Anupshaya Beyond Prakriti\n            </a>\n</h4>\n<p><strong>Authors:</strong> S. Sharma#, O.A. Sonawane#, R. Jain, A. Sharma, D. Jangir, V. Garisetti, S.P. Baskaran, K. Shreedharala,\n            K.R. Das, <strong>A. Samal</strong>, S.R. Thrigulla, N.R. Kochar, M. Yadav, D.C. Sharma, S. Chhipa, M. Mukerji*</p>\n<p><strong>Year:</strong> 2026</p>\n<p><strong>Preprint:</strong> Research Square rs.3.rs-9278930</p>\n<p><strong>Research Area:</strong> Natural Product Spaces</p>',
 },
 {
   year: 2026,
