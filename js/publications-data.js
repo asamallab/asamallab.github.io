@@ -31,8 +31,8 @@ const publications = [
     href: "https://www.biorxiv.org/content/10.64898/2026.09.12.751126v1",
     status: "Submitted",
     html: '<h4>\n  <a href="https://www.biorxiv.org/content/10.64898/2026.09.12.751126v1" target="_blank">\n    NANHA - Neurostimulation in Atypical Neurodevelopment: a Harmonized Atlas\n  </a>\n</h4>\n<p><strong>Authors:</strong> M. Mondal, C. Guha, S.A. Suresh, S. Vashishth, V. Muralidharan*, <strong>A. Samal*</strong></p>\n<p><strong>Year:</strong> 2026</p>\n<p><strong>Preprint:</strong> bioRxiv 2026.09.12.751126</p>\n<p><a href="https://cb.imsc.res.in/nanha/" target="_blank">Link to NANHA</a></p>\n<p><strong>Research Area:</strong> Others</p>',
-  },
-  {
+},
+{
     year: 2026,
     title:
       "TickMapKB: A FAIR Spatial Knowledgebase of Tick Species and Associated Pathogens in India",
@@ -43,8 +43,49 @@ const publications = [
     href: "https://www.biorxiv.org/content/10.64898/2026.06.22.733803",
     status: "Submitted",
     html: '<h4>\n<a href="https://www.biorxiv.org/content/10.64898/2026.06.22.733803" target="_blank">\n              TickMapKB: A FAIR Spatial Knowledgebase of Tick Species and Associated Pathogens in India\n            </a>\n</h4>\n<p><strong>Authors:</strong> S.R. Madgaonkar, S. Vashishth, E. Ayyanar, S. Srirama, <strong>A.\n              Samal*</strong></p>\n<p><strong>Year:</strong> 2026</p>\n<p><strong>Preprint:</strong> bioRxiv 2026.06.22.733803</p>\n<p>\n<a href="https://cb.imsc.res.in/tickmapkb/" target="_blank">Link to\n              TickMapKB</a>\n</p>\n<p><strong>Research Area:</strong> Others</p>',
-  },
-  {
+},
+{
+  year: 2026,
+  title:
+    "DEDuCT 3.0: An enhanced and expanded FAIR-compliant resource and toxicology knowledge graph for endocrine disrupting chemicals",
+  authors:
+    "N. Chivukula, S. Vashishth, P. Kandasamy, S.R. Madgaonkar, A. Samal*",
+  journal: "bioRxiv 2026.01.23.701267",
+  area: "Exposomics / Systems Toxicology",
+  href: "https://www.biorxiv.org/content/10.64898/2026.01.23.701267",
+  status: "Submitted",
+  html: '<h4>\n' +
+    '<a href="https://www.biorxiv.org/content/10.64898/2026.01.23.701267" target="_blank">\n' +
+    'DEDuCT 3.0: An enhanced and expanded FAIR-compliant resource and toxicology knowledge graph for endocrine disrupting chemicals\n' +
+    '</a>\n</h4>\n' +
+    '<p><strong>Authors:</strong> N. Chivukula, S. Vashishth, P. Kandasamy, S.R. Madgaonkar, <strong>A. Samal*</strong></p>\n' +
+    '<p><strong>Year:</strong> 2026</p>\n' +
+    '<p><strong>Preprint:</strong> bioRxiv 2026.01.23.701267</p>\n' +
+    '<p><a href="https://github.com/asamallab/DEDuCTv3.0" target="_blank">GitHub Repository</a></p>\n' +
+    '<p><a href="https://cb.imsc.res.in/deduct/" target="_blank">Link to DEDuCT</a></p>\n' +
+    '<p><strong>Research Area:</strong> Exposomics / Systems Toxicology</p>'
+},
+{
+  year: 2025,
+  title:
+    "TICToK: A comprehensive knowledgebase of tattoo ink chemicals and investigation of their associated toxicities and regulations",
+  authors:
+    "N. Chivukula, S.R. Madgaonkar, S.R. Marigoudar, K.V. Sharma, V. Kishore, A.V. Singh*, A. Samal*",
+  journal: "bioRxiv 2025.08.02.668261",
+  area: "Exposomics / Systems Toxicology",
+  href: "https://www.biorxiv.org/content/10.1101/2025.08.02.668261",
+  status: "Submitted",
+  html: '<h4>\n' +
+    '<a href="https://www.biorxiv.org/content/10.1101/2025.08.02.668261" target="_blank">\n' +
+    'TICToK: A comprehensive knowledgebase of tattoo ink chemicals and investigation of their associated toxicities and regulations\n' +
+    '</a>\n</h4>\n' +
+    '<p><strong>Authors:</strong> N. Chivukula, S.R. Madgaonkar, S.R. Marigoudar, K.V. Sharma, V. Kishore, A.V. Singh*, <strong>A. Samal*</strong></p>\n' +
+    '<p><strong>Year:</strong> 2025</p>\n' +
+    '<p><strong>Preprint:</strong> bioRxiv 2025.08.02.668261</p>\n' +
+    '<p><a href="https://cb.imsc.res.in/tictok/" target="_blank">Link to TICToK</a></p>\n' +
+    '<p><strong>Research Area:</strong> Exposomics / Systems Toxicology</p>'
+},
+{
     year: 2026,
     title:
       "TAS2R38 Polymorphism and Bitter Taste Perception: Implications for Satmaya and Upashaya-Anupshaya Beyond Prakriti",
@@ -89,30 +130,6 @@ const publications = [
     '<p><strong>Research Area:</strong> Others</p>'
 },
 {
-    year: 2025,
-    title:
-      "DEDuCT 3.0: An enhanced and expanded FAIR-compliant resource and\n              toxicology knowledge graph for endocrine disrupting chemicals",
-    authors:
-      "N. Chivukula, S. Vashishth, P. Kandasamy,\n            S.R. Madgaonkar, A. Samal*",
-    journal: "bioRxiv 2026.01.23.701267",
-    area: "Exposomics / Systems Toxicology",
-    href: "https://www.biorxiv.org/content/10.64898/2026.01.23.701267",
-    status: "Submitted",
-    html: '<h4>\n<a href="https://www.biorxiv.org/content/10.64898/2026.01.23.701267" target="_blank">\n              DEDuCT 3.0: An enhanced and expanded FAIR-compliant resource and\n              toxicology knowledge graph for endocrine disrupting chemicals\n            </a>\n</h4>\n<p><strong>Authors:</strong> N. Chivukula, S. Vashishth, P. Kandasamy,\n            S.R. Madgaonkar, <strong>A. Samal*</strong></p>\n<p><strong>Year:</strong> 2026</p>\n<p><strong>Preprint:</strong> bioRxiv 2026.01.23.701267</p>\n<p>\n<a href="https://cb.imsc.res.in/deduct/" target="_blank">Link to\n              DEDuCT</a>\n</p>\n<p><strong>Research Area:</strong> Exposomics / Systems Toxicology</p>',
-  },
-  {
-    year: 2025,
-    title:
-      "TICToK: A comprehensive knowledgebase of tattoo ink chemicals and\n              investigation of their associated\n              toxicities and regulations",
-    authors:
-      "N. Chivukula, S.R. Madgaonkar, S.R.\n            Marigoudar, K.V. Sharma, V. Kishore, A.V.\n            Singh*, A. Samal*",
-    journal: "bioRxiv 2025.08.02.668261",
-    area: "Exposomics / Systems Toxicology",
-    href: "https://www.biorxiv.org/content/10.1101/2025.08.02.668261",
-    status: "Submitted",
-    html: '<h4>\n<a href="https://www.biorxiv.org/content/10.1101/2025.08.02.668261" target="_blank">\n              TICToK: A comprehensive knowledgebase of tattoo ink chemicals and\n              investigation of their associated\n              toxicities and regulations\n            </a>\n</h4>\n<p><strong>Authors:</strong> N. Chivukula, S.R. Madgaonkar, S.R.\n            Marigoudar, K.V. Sharma, V. Kishore, A.V.\n            Singh*, <strong>A. Samal*</strong></p>\n<p><strong>Year:</strong> 2025</p>\n<p><strong>Preprint:</strong> bioRxiv 2025.08.02.668261</p>\n<p>\n<a href="https://cb.imsc.res.in/tictok/" target="_blank">Link to\n              TICToK</a>\n</p>\n<p><strong>Research Area:</strong> Exposomics / Systems Toxicology</p>',
-  },
-  {
     year: 2026,
     title:
       "A resource on chemicals used in aquaculture and\n              their ecotoxicity",
