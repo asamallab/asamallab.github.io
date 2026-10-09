@@ -13,7 +13,18 @@ function matches(p){
 }
 function filtered(){
   let a=publications.filter(matches);
-  a.sort((x,y)=>state.sort==='oldest'?x.year-y.year:state.sort==='title'?x.title.localeCompare(y.title):y.year-x.year);
+  a.sort((x, y) => {
+  if (state.sort === 'oldest') return x.year - y.year;
+  if (state.sort === 'title') return x.title.localeCompare(y.title);
+
+  // Newest view: Submitted papers first, then Published papers.
+  if (x.status !== y.status) {
+    if (x.status === 'Submitted') return -1;
+    if (y.status === 'Submitted') return 1;
+  }
+
+  return y.year - x.year;
+});
   if(state.recent)a=a.slice(0,5);
   return a;
 }
