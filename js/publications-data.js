@@ -5,7 +5,7 @@ const publications = [
   title:
     "IMPPAT 3.0: An updated FAIR database of phytochemicals and formulations of Indian Medicinal plants",
   authors:
-    "S.P. Baskaran, A.K. Sahoo, P. Sil, R. Tiwari, N. Chivukula, S.E. Eapen, G. Ranganathan, P. Semwal, A. Samal*",
+    "S.P. Baskaran#, A.K. Sahoo#, P. Sil, R. Tiwari, N. Chivukula, S.E. Eapen, G. Ranganathan, P. Semwal, A. Samal*",
   journal: "arXiv:2610.07478",
   area: "Natural Product Spaces",
   href: "https://arxiv.org/abs/2610.07478",
