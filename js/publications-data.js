@@ -57,27 +57,6 @@ const publications = [
     html: '<h4>\n<a href="https://doi.org/10.21203/rs.3.rs-9278930/v1" target="_blank">\n              TAS2R38 Polymorphism and Bitter Taste Perception: Implications for Satmaya and Upashaya-Anupshaya Beyond Prakriti\n            </a>\n</h4>\n<p><strong>Authors:</strong> S. Sharma#, O.A. Sonawane#, R. Jain, A. Sharma, D. Jangir, V. Garisetti, S.P. Baskaran, K. Shreedharala,\n            K.R. Das, <strong>A. Samal</strong>, S.R. Thrigulla, N.R. Kochar, M. Yadav, D.C. Sharma, S. Chhipa, M. Mukerji*</p>\n<p><strong>Year:</strong> 2026</p>\n<p><strong>Preprint:</strong> Research Square rs.3.rs-9278930</p>\n<p><strong>Research Area:</strong> Natural Product Spaces</p>',
 },
 {
-  year: 2026,
-  title:
-    "DEDuCT 3.0: An enhanced and expanded FAIR-compliant resource and toxicology knowledge graph for endocrine disrupting chemicals",
-  authors:
-    "N. Chivukula, S. Vashishth, P. Kandasamy, S.R. Madgaonkar, A. Samal*",
-  journal: "bioRxiv 2026.01.23.701267",
-  area: "Exposomics / Systems Toxicology",
-  href: "https://www.biorxiv.org/content/10.64898/2026.01.23.701267",
-  status: "Submitted",
-  html: '<h4>\n' +
-    '<a href="https://www.biorxiv.org/content/10.64898/2026.01.23.701267" target="_blank">\n' +
-    'DEDuCT 3.0: An enhanced and expanded FAIR-compliant resource and toxicology knowledge graph for endocrine disrupting chemicals\n' +
-    '</a>\n</h4>\n' +
-    '<p><strong>Authors:</strong> N. Chivukula, S. Vashishth, P. Kandasamy, S.R. Madgaonkar, <strong>A. Samal*</strong></p>\n' +
-    '<p><strong>Year:</strong> 2026</p>\n' +
-    '<p><strong>Preprint:</strong> bioRxiv 2026.01.23.701267</p>\n' +
-    '<p><a href="https://github.com/asamallab/DEDuCTv3.0" target="_blank">GitHub Repository</a></p>\n' +
-    '<p><a href="https://cb.imsc.res.in/deduct/" target="_blank">Link to DEDuCT</a></p>\n' +
-    '<p><strong>Research Area:</strong> Exposomics / Systems Toxicology</p>'
-},
-{
   year: 2025,
   title:
     "TICToK: A comprehensive knowledgebase of tattoo ink chemicals and investigation of their associated toxicities and regulations",
@@ -95,6 +74,27 @@ const publications = [
     '<p><strong>Year:</strong> 2025</p>\n' +
     '<p><strong>Preprint:</strong> bioRxiv 2025.08.02.668261</p>\n' +
     '<p><a href="https://cb.imsc.res.in/tictok/" target="_blank">Link to TICToK</a></p>\n' +
+    '<p><strong>Research Area:</strong> Exposomics / Systems Toxicology</p>'
+},
+{
+  year: 2026,
+  title:
+    "A FAIR-compliant resource and toxicology knowledge graph for mechanistic exploration of endocrine disrupting chemicals associated toxicity",
+  authors:
+    "N. Chivukula, S. Vashishth, P. Kandasamy, S.R. Madgaonkar, A. Samal*",
+  journal: "Journal of Hazardous Materials Advances, 101660 (2026)",
+  area: "Exposomics / Systems Toxicology",
+  href: "https://www.sciencedirect.com/science/article/pii/S2772416626006534",
+  status: "Published",
+  html: '<h4>\n' +
+    '<a href="https://www.sciencedirect.com/science/article/pii/S2772416626006534" target="_blank">\n' +
+    'A FAIR-compliant resource and toxicology knowledge graph for mechanistic exploration of endocrine disrupting chemicals associated toxicity\n' +
+    '</a>\n</h4>\n' +
+    '<p><strong>Authors:</strong> N. Chivukula, S. Vashishth, P. Kandasamy, S.R. Madgaonkar, <strong>A. Samal*</strong></p>\n' +
+    '<p><strong>Year:</strong> 2026</p>\n' +
+    '<p><strong>Journal:</strong> Journal of Hazardous Materials Advances, 101660 (2026)</p>\n' +
+    '<p><a href="https://github.com/asamallab/DEDuCTv3.0" target="_blank">GitHub Repository</a></p>\n' +
+    '<p><a href="https://cb.imsc.res.in/deduct/" target="_blank">Link to DEDuCT</a></p>\n' +
     '<p><strong>Research Area:</strong> Exposomics / Systems Toxicology</p>'
 },
 {
