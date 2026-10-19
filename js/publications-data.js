@@ -92,7 +92,7 @@ const publications = [
     '</a>\n</h4>\n' +
     '<p><strong>Authors:</strong> N. Chivukula, S. Vashishth, P. Kandasamy, S.R. Madgaonkar, <strong>A. Samal*</strong></p>\n' +
     '<p><strong>Year:</strong> 2026</p>\n' +
-    '<p><strong>Journal:</strong> Journal of Hazardous Materials Advances, 101660 (2026)</p>\n' +
+    '<p><strong>Journal:</strong> Journal of Hazardous Materials Advances, 24: 101660 (2026)</p>\n' +
     '<p><a href="https://github.com/asamallab/DEDuCTv3.0" target="_blank">GitHub Repository</a></p>\n' +
     '<p><a href="https://cb.imsc.res.in/deduct/" target="_blank">Link to DEDuCT</a></p>\n' +
     '<p><strong>Research Area:</strong> Exposomics / Systems Toxicology</p>'
