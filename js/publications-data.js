@@ -123,6 +123,7 @@ const publications = [
     '<ul>\n' +
     '<li>Scienmag: <a href="https://scienmag.com/new-database-maps-3111-genes-across-the-11-hallmarks-of-aging/" target="_blank">New Database Maps 3,111 Genes Across the 11 Hallmarks of Aging</a></li>\n' +
     '<li>Bioengineer.org: <a href="https://bioengineer.org/new-database-maps-3111-genes-across-the-11-hallmarks-of-aging/" target="_blank">New Database Maps 3,111 Genes Across the 11 Hallmarks of Aging</a></li>\n' +
+    '<li>The Hindu BusinessLine: <a href="https://www.thehindubusinessline.com/business-tech/data-tool-decodes-hallmarks-of-ageing/article71601113.ece" target="_blank">Data tool decodes hallmarks of ageing</a></li>\n' +
     '</ul>\n' +
     '</div>\n' +
     '</div>\n' +
