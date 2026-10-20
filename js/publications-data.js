@@ -82,7 +82,7 @@ const publications = [
     "A FAIR-compliant resource and toxicology knowledge graph for mechanistic exploration of endocrine disrupting chemicals associated toxicity",
   authors:
     "N. Chivukula, S. Vashishth, P. Kandasamy, S.R. Madgaonkar, A. Samal*",
-  journal: "Journal of Hazardous Materials Advances, 101660 (2026)",
+  journal: "Journal of Hazardous Materials Advances, 24, 101660 (2026)",
   area: "Exposomics / Systems Toxicology",
   href: "https://www.sciencedirect.com/science/article/pii/S2772416626006534",
   status: "Published",
