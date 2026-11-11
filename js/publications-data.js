@@ -15,7 +15,6 @@ const publications = [
     'Ayurvedic Rasayana Restores Lipid Homeostasis in Liver: Insights from Systems Biology Studies\n' +
     '</a>\n</h4>\n' +
     '<p><strong>Authors:</strong> H.B. Joshi#, A. Vallazhath#, P. Sil, R. Tiwari, K.R. Hebbar, S. Sharma, Satish Rao B S, B. Hadapad, <strong>A. Samal*</strong>, M.B. Joshi*</p>\n' +
-    '<p><small># Equal contribution; * Corresponding author</small></p>\n' +
     '<p><strong>Year:</strong> 2026</p>\n' +
     '<p><strong>Preprint:</strong> arXiv:2611.13551</p>\n' +
     '<p><strong>Research Area:</strong> Natural Product Spaces</p>'
