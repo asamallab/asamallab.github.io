@@ -3,6 +3,26 @@ const publications = [
 {
   year: 2026,
   title:
+    "Ayurvedic Rasayana Restores Lipid Homeostasis in Liver: Insights from Systems Biology Studies",
+  authors:
+    "H.B. Joshi#, A. Vallazhath#, P. Sil, R. Tiwari, K.R. Hebbar, S. Sharma, Satish Rao B S, B. Hadapad, A. Samal*, M.B. Joshi*",
+  journal: "arXiv:2611.13551",
+  area: "Natural Product Spaces",
+  href: "https://arxiv.org/abs/2611.13551",
+  status: "Submitted",
+  html: '<h4>\n' +
+    '<a href="https://arxiv.org/abs/2611.13551" target="_blank">\n' +
+    'Ayurvedic Rasayana Restores Lipid Homeostasis in Liver: Insights from Systems Biology Studies\n' +
+    '</a>\n</h4>\n' +
+    '<p><strong>Authors:</strong> H.B. Joshi#, A. Vallazhath#, P. Sil, R. Tiwari, K.R. Hebbar, S. Sharma, Satish Rao B S, B. Hadapad, <strong>A. Samal*</strong>, M.B. Joshi*</p>\n' +
+    '<p><small># Equal contribution; * Corresponding author</small></p>\n' +
+    '<p><strong>Year:</strong> 2026</p>\n' +
+    '<p><strong>Preprint:</strong> arXiv:2611.13551</p>\n' +
+    '<p><strong>Research Area:</strong> Natural Product Spaces</p>'
+},
+{
+  year: 2026,
+  title:
     "IMPPAT 3.0: An updated FAIR database of phytochemicals and formulations of Indian Medicinal plants",
   authors:
     "S.P. Baskaran#, A.K. Sahoo#, P. Sil, R. Tiwari, N. Chivukula, S.E. Eapen, G. Ranganathan, P. Semwal, A. Samal*",
