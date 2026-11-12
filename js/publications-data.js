@@ -186,18 +186,31 @@ const publications = [
     html: '<h4>\n<a href="https://www.sciencedirect.com/science/article/pii/S147692712600321X" target="_blank">\n              Computational investigation of single herbal drugs for\n              diabetes and obesity using knowledge graph and network\n              pharmacology\n            </a>\n</h4>\n<p><strong>Authors:</strong> P. Sil#, R. Tiwari#, V. Garisetti, S.P.\n            Baskaran, F.H. Dhanaseelan, S. Srivastava, <strong>A.\n              Samal*</strong></p>\n<p><strong>Journal:</strong> Computational Biology and Chemistry, 124(2): 109194 (2026)</p>\n<p>\n<a href="https://asamallab.github.io/SHDKG-DiabetesObesity/" target="_blank">Link to SHDKG-DiabetesObesity</a>\n</p>\n<div class="px-5 pb-4">\n<div class="card">\n<div class="card-body">\n<p><strong>Media Coverage in:</strong></p>\n<ul>\n<li>The Hindu Business Line: <a href="https://www.thehindubusinessline.com/business-tech/how-do-natural-polypills-work/article70706077.ece" target="_blank">How do ‘natural polypills’ work?</a></li>\n</ul>\n</div>\n</div>\n</div>\n<p><strong>Research Area:</strong> Natural Product Spaces</p>',
   },
   {
-    year: 2026,
-    title:
-      "Sec and Tat mediated secretion safeguards Mycobacterium tuberculosis membrane homeostasis",
-    authors:
-      "P. Sanyal#, J. Uppada#, S. Sinha, Y. Bhat, S. Khan, S.V. Rajaram, E.V. Arokiyaraj,\n            G.D. Jhingan, N. Agarwal, A. Samal* , V.K. Nandicoori*",
-    journal: "Molecular & Cellular Proteomics, 101555 (2026)",
-    area: "Systems Modelling of Metabolism and Protein Secretion Systems",
-    href: "https://doi.org/10.1016/j.mcpro.2026.101555",
-    status: "Published",
-    html: '<h4><a href="https://doi.org/10.1016/j.mcpro.2026.101555" target="_blank">\n              Sec and Tat mediated secretion safeguards Mycobacterium tuberculosis membrane homeostasis\n            </a></h4>\n<p><strong>Authors:</strong> P. Sanyal#, J. Uppada#, S. Sinha, Y. Bhat, S. Khan, S.V. Rajaram, E.V. Arokiyaraj,\n            G.D. Jhingan, N. Agarwal, <strong>A. Samal*</strong>, V.K. Nandicoori*</p>\n<p><strong>Journal:</strong> Molecular &amp; Cellular Proteomics, 101555 (2026)</p>\n<p><strong>Research Area:</strong> Systems Modelling of Metabolism and Protein Secretion Systems</p>',
-  },
-  {
+  year: 2026,
+  title:
+    "Sec and Tat mediated secretion safeguards Mycobacterium tuberculosis membrane homeostasis",
+  authors:
+    "P. Sanyal#, J. Uppada#, S. Sinha, Y. Bhat, S. Khan, S.V. Rajaram, E.V. Arokiyaraj,\n            G.D. Jhingan, N. Agarwal, A. Samal* , V.K. Nandicoori*",
+  journal: "Molecular & Cellular Proteomics, 101555 (2026)",
+  area: "Systems Modelling of Metabolism and Protein Secretion Systems",
+  href: "https://doi.org/10.1016/j.mcpro.2026.101555",
+  status: "Published",
+  html: '<h4><a href="https://doi.org/10.1016/j.mcpro.2026.101555" target="_blank">\n              Sec and Tat mediated secretion safeguards Mycobacterium tuberculosis membrane homeostasis\n            </a></h4>\n' +
+    '<p><strong>Authors:</strong> P. Sanyal#, J. Uppada#, S. Sinha, Y. Bhat, S. Khan, S.V. Rajaram, E.V. Arokiyaraj,\n            G.D. Jhingan, N. Agarwal, <strong>A. Samal*</strong>, V.K. Nandicoori*</p>\n' +
+    '<p><strong>Journal:</strong> Molecular &amp; Cellular Proteomics, 101555 (2026)</p>\n' +
+    '<div class="px-5 pb-4">\n' +
+    '<div class="card">\n' +
+    '<div class="card-body">\n' +
+    '<p><strong>Media Coverage in:</strong></p>\n' +
+    '<ul>\n' +
+    '<li>The Hindu: <a href="https://www.thehindu.com/sci-tech/health/csir-ccmb-team-identifies-potential-new-targets-to-fight-tuberculosis/article71682790.ece/amp/" target="_blank">CSIR-CCMB team identifies potential new targets to fight Tuberculosis</a></li>\n' +
+    '</ul>\n' +
+    '</div>\n' +
+    '</div>\n' +
+    '</div>\n' +
+    '<p><strong>Research Area:</strong> Systems Modelling of Metabolism and Protein Secretion Systems</p>',
+},
+{
     year: 2026,
     title:
       "Node persistence from topological data analysis reveals changes in\n              brain functional connectivity",
