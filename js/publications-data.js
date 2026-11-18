@@ -3,6 +3,25 @@ const publications = [
 {
   year: 2026,
   title:
+    "A comparative exploration of Steinerberger curvature and resistance curvature in model and real-world complex networks",
+  authors:
+    "M. Mondal, P. Vasu, A. Samal, J. Jost",
+  journal: "arXiv:2611.23204",
+  area: "Geometry and Topology based methods",
+  href: "https://arxiv.org/abs/2611.23204",
+  status: "Submitted",
+  html: '<h4>\n' +
+    '<a href="https://arxiv.org/abs/2611.23204" target="_blank">\n' +
+    'A comparative exploration of Steinerberger curvature and resistance curvature in model and real-world complex networks\n' +
+    '</a>\n</h4>\n' +
+    '<p><strong>Authors:</strong> M. Mondal, P. Vasu, <strong>A. Samal</strong>, J. Jost</p>\n' +
+    '<p><strong>Year:</strong> 2026</p>\n' +
+    '<p><strong>Preprint:</strong> arXiv:2611.23204</p>\n' +
+    '<p><strong>Research Area:</strong> Geometry and Topology based methods</p>'
+},
+{
+  year: 2026,
+  title:
     "Ayurvedic Rasayana Restores Lipid Homeostasis in Liver: Insights from Systems Biology Studies",
   authors:
     "H.B. Joshi#, A. Vallazhath#, P. Sil, R. Tiwari, K.R. Hebbar, S. Sharma, Satish Rao B S, B. Hadapad, A. Samal*, M.B. Joshi*",
