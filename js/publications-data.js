@@ -5,7 +5,7 @@ const publications = [
   title:
     "A comparative exploration of Steinerberger curvature and resistance curvature in model and real-world complex networks",
   authors:
-    "M. Mondal, P. Vasu, A. Samal, J. Jost",
+    "M. Mondal, P. Vasu, A. Samal*, J. Jost",
   journal: "arXiv:2611.23204",
   area: "Geometry and Topology based methods",
   href: "https://arxiv.org/abs/2611.23204",
