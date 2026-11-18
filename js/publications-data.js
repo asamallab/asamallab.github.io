@@ -14,7 +14,7 @@ const publications = [
     '<a href="https://arxiv.org/abs/2611.23204" target="_blank">\n' +
     'A comparative exploration of Steinerberger curvature and resistance curvature in model and real-world complex networks\n' +
     '</a>\n</h4>\n' +
-    '<p><strong>Authors:</strong> M. Mondal, P. Vasu, <strong>A. Samal</strong>, J. Jost</p>\n' +
+    '<p><strong>Authors:</strong> M. Mondal, P. Vasu, <strong>A. Samal*</strong>, J. Jost*</p>\n' +
     '<p><strong>Year:</strong> 2026</p>\n' +
     '<p><strong>Preprint:</strong> arXiv:2611.23204</p>\n' +
     '<p><strong>Research Area:</strong> Geometry and Topology based methods</p>'
